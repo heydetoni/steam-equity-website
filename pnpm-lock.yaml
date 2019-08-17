@@ -3,6 +3,7 @@ dependencies:
   jquery: 3.4.1
   popper.js: 1.15.0
 devDependencies:
+  cssnano: 4.1.10
   parcel: 1.12.3
   sass: 1.22.10
 lockfileVersion: 5.1
@@ -5295,6 +5296,7 @@ packages:
       integrity: sha1-HBH5IY8HYImkfdUS+TxmmaaoHVI=
 specifiers:
   bootstrap: ^4.3.1
+  cssnano: ^4.1.10
   jquery: ^3.4.1
   parcel: ^1.12.3
   popper.js: ^1.15.0

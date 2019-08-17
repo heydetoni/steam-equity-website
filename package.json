@@ -10,6 +10,7 @@
   },
   "description": "STEAM Equity club website.",
   "devDependencies": {
+    "cssnano": "^4.1.10",
     "parcel": "^1.12.3",
     "sass": "^1.22.10"
   },
@@ -23,7 +24,7 @@
     "url": "git+https://github.com/pizzafox/steam-equity-website.git"
   },
   "scripts": {
-    "build": "parcel build src/index.html --experimental-scope-hoisting"
+    "build": "parcel build src/index.html --experimental-scope-hoisting --no-autoinstall"
   },
   "version": "1.0.0"
 }
