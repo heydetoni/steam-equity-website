@@ -1,0 +1,23 @@
+name: Node.js CI
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-18.04
+
+    steps:
+      - name: "Git checkout"
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "10.x"
+      - name: Install PNPM
+        run: npm install -g pnpm
+      - name: Install
+        run: pnpm install
+      - name: Build
+        run: pnpm run build
