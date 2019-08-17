@@ -1,0 +1,29 @@
+{
+  "author": "Jonah Snider <me@jonahsnider> (jonahsnider.ninja)",
+  "bugs": {
+    "url": "https://github.com/pizzafox/steam-equity-website/issues"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  },
+  "description": "STEAM Equity club website.",
+  "devDependencies": {
+    "parcel": "^1.12.3",
+    "sass": "^1.22.10"
+  },
+  "homepage": "https://steam-equity.netlify.com",
+  "license": "MIT",
+  "main": "src/index.html",
+  "name": "steam-equity-website",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pizzafox/steam-equity-website.git"
+  },
+  "scripts": {
+    "build": "parcel build src/index.html --experimental-scope-hoisting"
+  },
+  "version": "1.0.0"
+}
