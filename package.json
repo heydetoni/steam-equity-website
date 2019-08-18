@@ -26,5 +26,5 @@
   "scripts": {
     "build": "rm -rf dist; parcel build src/index.html --experimental-scope-hoisting --no-autoinstall"
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
