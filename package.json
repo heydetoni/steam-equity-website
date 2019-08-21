@@ -24,7 +24,8 @@
     "url": "git+https://github.com/pizzafox/steam-equity-website.git"
   },
   "scripts": {
-    "build": "rm -rf dist; parcel build src/index.html --experimental-scope-hoisting --no-autoinstall"
+    "build": "rm -rf dist; parcel build src/index.html --experimental-scope-hoisting --no-autoinstall",
+    "serve": "parcel serve src/index.html --no-autoinstall"
   },
   "version": "1.0.3"
 }
