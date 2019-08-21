@@ -27,5 +27,5 @@
     "build": "rm -rf dist; parcel build src/index.html --experimental-scope-hoisting --no-autoinstall",
     "serve": "parcel serve src/index.html --no-autoinstall"
   },
-  "version": "1.0.3"
+  "version": "1.10.0"
 }
