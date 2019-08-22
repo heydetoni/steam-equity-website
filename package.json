@@ -36,5 +36,5 @@
     "prettier:fix": "prettier --check --write \"./**/*/*.{{j,t}sx?,flow,{c,le,sc}ss,html,json,md,ya?ml}\"",
     "lint:fix": "eslint . --fix"
   },
-  "version": "1.10.2"
+  "version": "1.10.3"
 }
