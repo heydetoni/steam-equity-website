@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "@dice-discord"
+  ],
+  "env": {
+    "node": false,
+    "browser": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  }
+}

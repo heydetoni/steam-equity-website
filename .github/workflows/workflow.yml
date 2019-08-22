@@ -19,5 +19,9 @@ jobs:
         run: npm install -g pnpm
       - name: Install
         run: pnpm install
-      - name: Build
+      - name: Lint JavaScript
+        run: pnpm run lint
+      - name: Check formatting
+        run: pnpm run prettier
+      - name: Build for production
         run: pnpm run build
