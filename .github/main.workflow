@@ -18,17 +18,17 @@ action "Install" {
 action "Lint JavaScript" {
   uses = "actions/npm@master"
   needs = ["Install"]
-  args = "run lint"
+  args = "run --prefix ./ lint"
 }
 
 action "Check formatting" {
   uses = "actions/npm@master"
   needs = ["Install"]
-  args = "run prettier"
+  args = "run --prefix ./ prettier"
 }
 
 action "Build for production" {
   uses = "actions/npm@master"
   needs = ["Check formatting", "Lint JavaScript"]
-  args = "run build"
+  args = "run --prefix ./ build"
 }
