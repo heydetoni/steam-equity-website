@@ -9,9 +9,10 @@ action "Install PNPM" {
 }
 
 action "Install" {
-  uses = "actions/bin/sh@master"
+  uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
   needs = ["Install PNPM"]
   args = "pnpm install -D"
+  runs = "npx"
 }
 
 action "Lint JavaScript" {
