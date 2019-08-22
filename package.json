@@ -20,7 +20,7 @@
     "sass": "^1.22.10"
   },
   "homepage": "https://steam-equity.netlify.com",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "main": "src/index.html",
   "name": "steam-equity-website",
   "private": true,
@@ -36,5 +36,5 @@
     "prettier:fix": "prettier --check --write \"./**/*/*.{{j,t}sx?,flow,{c,le,sc}ss,html,json,md,ya?ml}\"",
     "lint:fix": "eslint . --fix"
   },
-  "version": "1.10.1"
+  "version": "1.10.2"
 }
