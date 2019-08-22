@@ -1,5 +1,7 @@
 # STEAM Equity Website
 
+[![Build Status](https://github.com/pizzafox/steam-equity-website/workflows/Node.js%20CI/badge.svg)](https://github.com/pizzafox/steam-equity-website/actions)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/020ffcb2-c56d-4c05-9809-686bc99cbec5/deploy-status)](https://app.netlify.com/sites/steam-equity/deploys)
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/pizzafox/steam-equity-website)
 
 Simple website for STEAM Equity.
