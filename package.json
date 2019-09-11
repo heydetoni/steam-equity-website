@@ -32,8 +32,8 @@
     "build": "rm -rf dist; parcel build src/index.html --experimental-scope-hoisting --no-autoinstall",
     "serve": "parcel serve src/index.html --no-autoinstall",
     "lint": "eslint .",
-    "prettier": "prettier --check \"./**/*/*.{{j,t}sx?,flow,{c,le,sc}ss,html,json,md,ya?ml}\"",
-    "prettier:fix": "prettier --check --write \"./**/*/*.{{j,t}sx?,flow,{c,le,sc}ss,html,json,md,ya?ml}\"",
+    "prettier": "prettier --check \"./**/*.{{j,t}{s,sx},flow,{c,le,sc}ss,html,json,md,{y,ya}ml}\"",
+    "prettier:fix": "prettier --check --write \"./**/*.{{j,t}{s,sx},flow,{c,le,sc}ss,html,json,md,{y,ya}ml}\"",
     "lint:fix": "eslint . --fix"
   },
   "version": "1.11.0"
