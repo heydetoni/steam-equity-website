@@ -1,40 +1,55 @@
 {
-  "author": "Jonah Snider <me@jonahsnider.ninja> (jonahsnider.ninja)",
+  "author": {
+    "email": "me@jonahsnider.ninja",
+    "name": "Jonah Snider",
+    "url": "https://jonahsnider.ninja"
+  },
   "bugs": {
-    "url": "https://github.com/pizzafox/steam-equity-website/issues"
+    "url": "https://github.com/pizzafox/steam-equity-website#issues"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
-    "popper.js": "^1.15.0"
+    "@fortawesome/fontawesome-svg-core": "^1.2.22",
+    "@fortawesome/free-brands-svg-icons": "^5.10.2",
+    "@fortawesome/free-solid-svg-icons": "^5.10.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "gatsby": "^2.15.14",
+    "gatsby-plugin-manifest": "^2.2.16",
+    "gatsby-plugin-offline": "^3.0.6",
+    "gatsby-plugin-react-helmet": "^3.1.7",
+    "gatsby-plugin-sass": "^2.1.14",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "react-scrollspy": "^3.4.0",
+    "sass": "^1.22.12",
+    "smoothscroll-polyfill": "^0.4.4"
   },
-  "description": "STEAM Equity club website.",
+  "description": "STEAM Equity Gatsby website using Hyperspace by HTML5 UP",
   "devDependencies": {
     "@dice-discord/eslint-config": "^3.0.0",
-    "cssnano": "^4.1.10",
-    "eslint": "^6.2.1",
-    "eslint-config-prettier": "^6.1.0",
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.3.0",
     "eslint-plugin-prettier": "^3.1.0",
-    "parcel": "^1.12.3",
-    "prettier": "^1.18.2",
-    "sass": "^1.22.10"
+    "eslint-plugin-react": "^7.14.3",
+    "prettier": "^1.18.2"
   },
-  "homepage": "https://steam-equity.netlify.com",
+  "homepage": "https://steamequity.netlify.com",
   "license": "Apache-2.0",
-  "main": "src/index.html",
   "name": "steam-equity-website",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pizzafox/steam-equity-website.git"
   },
   "scripts": {
-    "build": "rm -rf dist; parcel build src/index.html --experimental-scope-hoisting --no-autoinstall",
-    "serve": "parcel serve src/index.html --no-autoinstall",
+    "build": "rm -rf public; gatsby build",
+    "deploy": "gatsby build --prefix-paths",
+    "develop": "gatsby develop",
     "lint": "eslint .",
-    "prettier": "prettier --check \"./**/*/*.{{j,t}sx?,flow,{c,le,sc}ss,html,json,md,ya?ml}\"",
-    "prettier:fix": "prettier --check --write \"./**/*/*.{{j,t}sx?,flow,{c,le,sc}ss,html,json,md,ya?ml}\"",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --check \"./**/*.{{j,t}{s,sx},flow,{{sc,c},le}ss,json,md,{y,ya}ml}\"",
+    "prettier:fix": "prettier --check --write \"./**/*.{{j,t}{s,sx},flow,{[s]c,le}ss,json,md,{y,ya}ml}\"",
+    "serve": "gatsby serve"
   },
-  "version": "1.10.4"
+  "version": "2.0.0"
 }

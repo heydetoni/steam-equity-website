@@ -12,7 +12,7 @@ All source code is in the `src` folder.
 
 ### Stack
 
-The site is made using SCSS, HTML, and Bootstrap.
+The site is made using Gatsby, SCSS, HTML, and React.
 
 ### Installing dependencies
 
@@ -27,15 +27,15 @@ npm install -D
 yarn -D
 
 # PNPM
-pnpm install -D
+pnpm install -D --shamefully-flatten
 ```
 
 ### Running locally
 
-The following command will start a development server at `127.0.0.1:1234`.
+The following command will start a development server at `127.0.0.1:8000`.
 
 ```sh
-npm run serve
+npm run develop
 ```
 
 ### Versioning
@@ -87,4 +87,4 @@ You can build the project with the following command:
 npm run build
 ```
 
-This will bundle and tree-shake files into the `dist` directory.
+This will bundle and minify files into the `build` directory.

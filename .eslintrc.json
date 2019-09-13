@@ -1,12 +1,14 @@
 {
-  "extends": [
-    "@dice-discord"
-  ],
-  "env": {
-    "node": false,
-    "browser": true
-  },
   "parserOptions": {
-    "sourceType": "module"
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": ["@dice-discord", "plugin:react/recommended"],
+  "env": {
+    "node": true,
+    "es6": true
   }
 }
