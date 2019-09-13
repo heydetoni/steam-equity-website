@@ -19,7 +19,7 @@ const IndexPage = () => (
       <section id="intro" className="wrapper style1 fullscreen fade-up">
         <div className="inner">
           <h1>STEAM Equity</h1>
-          <p>Subtitle</p>
+          <p>rewriting everything here was a mistake - me at 11:36pm</p>
           <ul className="actions">
             <li>
               <Scroll type="id" element="one">

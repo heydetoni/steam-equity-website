@@ -9,6 +9,7 @@
   "extends": ["@dice-discord", "plugin:react/recommended"],
   "env": {
     "node": true,
-    "es6": true
+    "es6": true,
+    "browser": true
   }
 }

@@ -2,9 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import smoothscroll from "smoothscroll-polyfill";
 
-const Element = props => {
-  return props.children;
-};
+const Element = props => props.children;
 
 class Scroll extends React.Component {
   constructor() {
@@ -22,7 +20,7 @@ class Scroll extends React.Component {
     if (type && element) {
       switch (type) {
         case "class":
-          elem = document.getElementsByClassName(element)[0];
+          [elem] = document.getElementsByClassName(element);
           scroll = elem ? true : false;
           break;
         case "id":

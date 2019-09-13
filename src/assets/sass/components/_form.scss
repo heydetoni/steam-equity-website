@@ -158,7 +158,6 @@ input[type="radio"] {
   z-index: -1;
 
   & + label {
-    @include icon;
     color: _palette(fg);
     cursor: pointer;
     display: inline-block;
