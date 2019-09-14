@@ -4,10 +4,7 @@
     "es6": true,
     "node": true
   },
-  "extends": [
-    "@dice-discord",
-    "plugin:react/recommended"
-  ],
+  "extends": ["@dice-discord", "plugin:react/recommended"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
