@@ -33,7 +33,7 @@ module.exports = {
     "gatsby-plugin-robots-txt",
     {
       resolve: "gatsby-plugin-offline",
-      options: { precachePages: ["/index"] }
+      options: { precachePages: ["/*"] }
     }
   ]
 };
