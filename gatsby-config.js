@@ -2,7 +2,15 @@ module.exports = {
   // This path is subpath of your hosting https://domain.tld/portfolio
   pathPrefix: "/",
   siteMetadata: {
-    title: "STEAM Equity"
+    title: "STEAM Equity",
+    description: "STEAM Equity Club at SJHS",
+    author: {
+      /* Title of the author */
+      name: "Jonah Snider",
+      /** Twitter username (ex. `@gatsbyjs`) */
+      twitter: ""
+    },
+    siteUrl: "https://steam.zws.im"
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -21,6 +29,11 @@ module.exports = {
       }
     },
     "gatsby-plugin-sass",
-    "gatsby-plugin-offline"
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-robots-txt",
+    {
+      resolve: "gatsby-plugin-offline",
+      options: { precachePages: ["/index"] }
+    }
   ]
 };

@@ -3,10 +3,10 @@ import { faCode, faCog, faDesktop, faGem, faLink, faLock } from "@fortawesome/fr
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "gatsby";
 import React from "react";
-import Footer from "../components/Footer";
+import Footer from "../components/footer";
 import Layout from "../components/layout";
 import Scroll from "../components/Scroll";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/sidebar";
 import pic1 from "../images/pic01.jpg";
 import pic2 from "../images/pic02.jpg";
 import pic3 from "../images/pic03.jpg";
@@ -20,6 +20,7 @@ const IndexPage = () => (
         <div className="inner">
           <h1>STEAM Equity</h1>
           <p>rewriting everything here was a mistake - me at 11:36pm</p>
+          <p>god is dead and this website killed him - me at 8:36pm the next day</p>
           <ul className="actions">
             <li>
               <Scroll type="id" element="one">
@@ -34,9 +35,11 @@ const IndexPage = () => (
 
       <section id="one" className="wrapper style2 spotlights">
         <section>
-          <a href="/#" className="image" alt="image">
-            <img src={pic1} alt="" data-position="center center" />
-          </a>
+          <a
+            href="/#"
+            className="image"
+            style={{ backgroundImage: `url(${pic1})`, backgroundPosition: "center center" }}
+          ></a>
           <div className="content">
             <div className="inner">
               <h2>Block 1</h2>
@@ -55,9 +58,11 @@ const IndexPage = () => (
           </div>
         </section>
         <section>
-          <a href="/#" className="image">
-            <img src={pic2} alt="" data-position="top center" />
-          </a>
+          <a
+            href="/#"
+            className="image"
+            style={{ backgroundImage: `url(${pic2})`, backgroundPosition: "top center" }}
+          ></a>
           <div className="content">
             <div className="inner">
               <h2>Block 2</h2>
@@ -76,9 +81,12 @@ const IndexPage = () => (
           </div>
         </section>
         <section>
-          <a href="/#" className="image">
-            <img src={pic3} alt="" data-position="25% 25%" />
-          </a>
+          <a
+            href="/#"
+            className="image"
+            data-position="25% 25%"
+            style={{ backgroundImage: `url(${pic3})`, backgroundPosition: "25% 25%" }}
+          ></a>
           <div className="content">
             <div className="inner">
               <h2>Block 3</h2>

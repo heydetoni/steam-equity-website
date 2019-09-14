@@ -1,9 +1,9 @@
-import React from "react";
+import { graphql, StaticQuery } from "gatsby";
 import PropTypes from "prop-types";
-import Helmet from "react-helmet";
-import { StaticQuery, graphql } from "gatsby";
-
+import React from "react";
 import "../assets/sass/main.scss";
+import SEO from "./seo";
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -15,14 +15,9 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={() => (
       <>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[{ name: "description", content: "Hyperspace" }, { name: "keywords", content: "site, web" }]}
-        >
-          <html lang="en" />
-        </Helmet>
+        <SEO />
         <div>{children}</div>
       </>
     )}
