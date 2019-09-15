@@ -42,8 +42,8 @@ module.exports = {
         name: "STEAM Equity",
         short_name: "STEAM Equity",
         start_url: "/",
-        background_color: "#312450 ",
-        theme_color: "#312450",
+        background_color: "#312450",
+        theme_color: "#5E42A6",
         display: "standalone",
         // This path is relative to the root of the site.
         icon: "src/assets/img/website-icon.png"
