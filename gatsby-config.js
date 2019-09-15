@@ -49,9 +49,9 @@ module.exports = {
         icon: "src/assets/img/website-icon.png"
       }
     },
-    "gatsby-plugin-sass",
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-robots-txt",
+    { resolve: "gatsby-plugin-sass" },
+    { resolve: "gatsby-plugin-sitemap" },
+    { resolve: "gatsby-plugin-robots-txt" },
     {
       resolve: "gatsby-plugin-offline",
       options: { precachePages: ["/*"] }
