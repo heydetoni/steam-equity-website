@@ -5,6 +5,7 @@ import Layout from "./layout";
 
 const Page = ({ children }) => (
   <Layout>
+    <Header />
     <div id="wrapper">{children}</div>
   </Layout>
 );
