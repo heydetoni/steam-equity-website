@@ -1,7 +1,7 @@
 import React from "react";
 import { loremIpsum } from "react-lorem-ipsum";
-import Page from "../components/layouts/page";
 import pic4 from "../images/pic4.jpg";
+import Page from "../templates/page";
 
 const GenericPage = () => (
   <Page title="A Generic Page" image={pic4}>

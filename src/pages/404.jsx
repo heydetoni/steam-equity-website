@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
-import Layout from "../components/layouts/layout";
+import Layout from "../templates/layout";
+
 const NotFoundPage = () => (
   <Layout>
     <section id="main" className="wrapper">

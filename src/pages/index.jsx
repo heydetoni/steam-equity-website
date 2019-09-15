@@ -5,13 +5,13 @@ import { graphql, Link, useStaticQuery } from "gatsby";
 import React from "react";
 import { loremIpsum } from "react-lorem-ipsum";
 import Feature from "../components/feature";
-import Layout from "../components/layouts/layout";
 import Scroll from "../components/Scroll";
 import Sidebar from "../components/sidebar";
 import Spotlight from "../components/spotlight";
 import pic1 from "../images/pic1.jpg";
 import pic2 from "../images/pic2.jpg";
 import pic3 from "../images/pic3.jpg";
+import Layout from "../templates/layout";
 
 const IndexPage = () => {
   const { site } = useStaticQuery(

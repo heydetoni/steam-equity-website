@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-import "../../assets/sass/main.scss";
+import "../assets/sass/main.scss";
 import Wrapper from "./wrapper";
 
 const Page = props => (

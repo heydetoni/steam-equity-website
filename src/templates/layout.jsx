@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import React from "react";
-import "../../assets/sass/main.scss";
-import Footer from "../footer";
-import SEO from "../seo";
+import "../assets/sass/main.scss";
+import Footer from "../components/footer";
+import SEO from "../components/seo";
 
 const Layout = ({ children }) => (
   <React.Fragment>
