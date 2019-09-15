@@ -52,6 +52,7 @@ module.exports = {
     { resolve: "gatsby-plugin-sass" },
     { resolve: "gatsby-plugin-sitemap" },
     { resolve: "gatsby-plugin-robots-txt" },
+    { resolve: "gatsby-plugin-purgecss", options: { printRejected: true } },
     {
       resolve: "gatsby-plugin-offline",
       options: { precachePages: ["/*"] }
