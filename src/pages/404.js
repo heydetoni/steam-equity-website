@@ -1,10 +1,19 @@
+import { Link } from "gatsby";
 import React from "react";
-import Layout from "../components/layout";
-
+import Layout from "../components/layouts/layout";
 const NotFoundPage = () => (
   <Layout>
-    <h1>NOT FOUND</h1>
-    <p>Not a valid URL</p>
+    <section id="main" className="wrapper">
+      <div className="inner">
+        <h1 className="major">404</h1>
+        <div className="align-center">
+          <h2>{"This page couldn't be found"}</h2>
+          <Link className="button large" to="/">
+            Home
+          </Link>
+        </div>
+      </div>
+    </section>
   </Layout>
 );
 

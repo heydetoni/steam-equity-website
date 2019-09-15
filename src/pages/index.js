@@ -3,13 +3,15 @@ import { faCode, faCog, faDesktop, faGem, faLink, faLock } from "@fortawesome/fr
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import React from "react";
-import Footer from "../components/footer";
-import Layout from "../components/layout";
+import { loremIpsum } from "react-lorem-ipsum";
+import Feature from "../components/feature";
+import Layout from "../components/layouts/layout";
 import Scroll from "../components/Scroll";
 import Sidebar from "../components/sidebar";
-import pic1 from "../images/pic01.jpg";
-import pic2 from "../images/pic02.jpg";
-import pic3 from "../images/pic03.jpg";
+import Spotlight from "../components/spotlight";
+import pic1 from "../images/pic1.jpg";
+import pic2 from "../images/pic2.jpg";
+import pic3 from "../images/pic3.jpg";
 
 const IndexPage = () => {
   const { site } = useStaticQuery(
@@ -40,7 +42,6 @@ const IndexPage = () => {
   return (
     <Layout>
       <Sidebar />
-
       <div id="wrapper">
         <section id="intro" className="wrapper style1 fullscreen fade-up">
           <div className="inner">
@@ -59,147 +60,43 @@ const IndexPage = () => {
         </section>
 
         <section id="one" className="wrapper style2 spotlights">
-          <section>
-            <a
-              href="/#"
-              className="image"
-              style={{ backgroundImage: `url(${pic1})`, backgroundPosition: "center center" }}
-            ></a>
-            <div className="content">
-              <div className="inner">
-                <h2>Block 1</h2>
-                <p>
-                  Convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis.
-                  Aliquam dapibus.
-                </p>
-                <ul className="actions">
-                  <li>
-                    <Link className="button" to="/generic">
-                      Learn more
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          <section>
-            <a
-              href="/#"
-              className="image"
-              style={{ backgroundImage: `url(${pic2})`, backgroundPosition: "top center" }}
-            ></a>
-            <div className="content">
-              <div className="inner">
-                <h2>Block 2</h2>
-                <p>
-                  Convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis.
-                  Aliquam dapibus.
-                </p>
-                <ul className="actions">
-                  <li>
-                    <Link className="button" to="/generic">
-                      Learn more
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          <section>
-            <a
-              href="/#"
-              className="image"
-              data-position="25% 25%"
-              style={{ backgroundImage: `url(${pic3})`, backgroundPosition: "25% 25%" }}
-            ></a>
-            <div className="content">
-              <div className="inner">
-                <h2>Block 3</h2>
-                <p>
-                  Convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis.
-                  Aliquam dapibus.
-                </p>
-                <ul className="actions">
-                  <li>
-                    <Link className="button" to="/generic">
-                      Learn more
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
+          <Spotlight
+            title="Block 1"
+            message={loremIpsum({ avgSentencesPerParagraph: 4, startWithLoremIpsum: false })}
+            to="/generic"
+            image={pic1}
+          />
+          <Spotlight
+            title="Block 2"
+            message={loremIpsum({ avgSentencesPerParagraph: 4, startWithLoremIpsum: false })}
+            to="/generic"
+            image={pic2}
+          />
+          <Spotlight
+            title="Block 3"
+            message={loremIpsum({ avgSentencesPerParagraph: 4, startWithLoremIpsum: false })}
+            to="/generic"
+            image={pic3}
+          />
         </section>
 
         <section id="two" className="wrapper style3 fade-up">
           <div className="inner">
             <h2>What we do</h2>
-            <p>
-              Convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis.
-              Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis
-              lorem.
-            </p>
+            <p>{loremIpsum({ avgSentencesPerParagraph: 5, startWithLoremIpsum: false })}</p>
             <div className="features">
-              <section>
-                <span className="icon major">
-                  <FontAwesomeIcon icon={faCode} />
-                </span>
-                <h3>Lorem ipsum amet</h3>
-                <p>
-                  Convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat
-                  dapibus.
-                </p>
-              </section>
-              <section>
-                <span className="icon major">
-                  <FontAwesomeIcon icon={faLock} />
-                </span>
-                <h3>Aliquam sed nullam</h3>
-                <p>
-                  Convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat
-                  dapibus.
-                </p>
-              </section>
-              <section>
-                <span className="icon major">
-                  <FontAwesomeIcon icon={faCog} />
-                </span>
-                <h3>Sed erat ullam corper</h3>
-                <p>
-                  Convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat
-                  dapibus.
-                </p>
-              </section>
-              <section>
-                <span className="icon major">
-                  <FontAwesomeIcon icon={faDesktop} />
-                </span>
-                <h3>Veroeros quis lorem</h3>
-                <p>
-                  Convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat
-                  dapibus.
-                </p>
-              </section>
-              <section>
-                <span className="icon major">
-                  <FontAwesomeIcon icon={faLink} />
-                </span>
-                <h3>Urna quis bibendum</h3>
-                <p>
-                  Convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat
-                  dapibus.
-                </p>
-              </section>
-              <section>
-                <span className="icon major">
-                  <FontAwesomeIcon icon={faGem} />
-                </span>
-                <h3>Aliquam urna dapibus</h3>
-                <p>
-                  Convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat
-                  dapibus.
-                </p>
-              </section>
+              {[faCode, faLock, faCog, faDesktop, faLink, faGem].map(icon => (
+                <Feature
+                  key={`${icon.prefix}-${icon.iconName}`}
+                  icon={icon}
+                  title={loremIpsum({
+                    avgWordsPerSentence: 3,
+                    avgSentencesPerParagraph: 1,
+                    startWithLoremIpsum: false
+                  })}
+                  body={loremIpsum({ avgSentencesPerParagraph: 2, startWithLoremIpsum: false })}
+                />
+              ))}
             </div>
             <ul className="actions">
               <li>
@@ -214,11 +111,7 @@ const IndexPage = () => {
         <section id="three" className="wrapper style1 fade-up">
           <div className="inner">
             <h2>Get in touch</h2>
-            <p>
-              Convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis.
-              Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis
-              lorem.
-            </p>
+            <p>{loremIpsum({ avgSentencesPerParagraph: 3, startWithLoremIpsum: false })}</p>
             <div className="split style1">
               <section>
                 <form method="post" action="#">
@@ -307,8 +200,6 @@ const IndexPage = () => {
           </div>
         </section>
       </div>
-
-      <Footer />
     </Layout>
   );
 };

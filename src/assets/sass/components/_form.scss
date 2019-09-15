@@ -184,11 +184,14 @@ input[type="radio"] {
   }
 
   &:checked + label {
+    @extend %fa-icon;
+    @extend .fas;
+
     &:before {
       background: _palette(fg-bold);
       border-color: _palette(fg-bold);
       color: _palette(accent3);
-      content: "\f00c";
+      content: fa-content($fa-var-check);
     }
   }
 
