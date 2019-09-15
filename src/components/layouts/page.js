@@ -1,12 +1,10 @@
 import PropTypes from "prop-types";
 import React from "react";
 import "../../assets/sass/main.scss";
-import Header from "../header";
-import Layout from "./layout";
+import Wrapper from "./wrapper";
 
 const Page = props => (
-  <Layout>
-    <Header />
+  <Wrapper>
     <section key="section" id="main" className="wrapper">
       <div key="inner" className="inner">
         <h1 key="title" className="major">
@@ -20,7 +18,7 @@ const Page = props => (
         {props.children}
       </div>
     </section>
-  </Layout>
+  </Wrapper>
 );
 
 Page.propTypes = {
