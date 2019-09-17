@@ -83,7 +83,7 @@ npm run prettier:fix
 The built files are a static site using just HTML, CSS, and JS.
 You can build the project with the following command:
 
-```shell
+```sh
 npm run build
 ```
 
