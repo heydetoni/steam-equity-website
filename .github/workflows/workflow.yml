@@ -18,7 +18,7 @@ jobs:
       - name: Install PNPM
         run: npm install -g pnpm
       - name: Install
-        run: pnpm install
+        run: pnpm install --shamefully-flatten
         env:
           GATSBY_TELEMETRY_DISABLED: 1
       - name: Lint JavaScript
