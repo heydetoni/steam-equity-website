@@ -17,6 +17,8 @@ jobs:
           node-version: "10.x"
       - name: Install PNPM
         run: npm install -g pnpm
+      - name: Prepare Gatsby
+        run: npm run ci
       - name: Install
         run: pnpm install
       - name: Lint JavaScript
