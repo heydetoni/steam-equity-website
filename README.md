@@ -87,4 +87,4 @@ You can build the project with the following command:
 npm run build
 ```
 
-This will bundle and minify files into the `build` directory.
+This will bundle and minify files into the `public` directory.
