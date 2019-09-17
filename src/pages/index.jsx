@@ -1,3 +1,6 @@
+import pic1 from "$images/pic1.jpg";
+import pic2 from "$images/pic2.jpg";
+import pic3 from "$images/pic3.jpg";
 import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faCode, faCog, faDesktop, faGem, faLink, faLock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,9 +11,6 @@ import Feature from "../components/feature";
 import Scroll from "../components/Scroll";
 import Sidebar from "../components/sidebar";
 import Spotlight from "../components/spotlight";
-import pic1 from "../images/pic1.jpg";
-import pic2 from "../images/pic2.jpg";
-import pic3 from "../images/pic3.jpg";
 import Layout from "../templates/layout";
 
 const IndexPage = () => {
@@ -63,19 +63,19 @@ const IndexPage = () => {
           <Spotlight
             title="Block 1"
             message={loremIpsum({ avgSentencesPerParagraph: 4, startWithLoremIpsum: false })}
-            to="/generic"
+            to="/pages/generic"
             image={pic1}
           />
           <Spotlight
             title="Block 2"
             message={loremIpsum({ avgSentencesPerParagraph: 4, startWithLoremIpsum: false })}
-            to="/generic"
+            to="/pages/generic"
             image={pic2}
           />
           <Spotlight
             title="Block 3"
             message={loremIpsum({ avgSentencesPerParagraph: 4, startWithLoremIpsum: false })}
-            to="/generic"
+            to="/pages/generic"
             image={pic3}
           />
         </section>

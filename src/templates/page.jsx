@@ -12,7 +12,7 @@ const Page = props => (
         </h1>
         {props.image && (
           <span key="imageWrapper" className="image fit">
-            <img key="image" src={props.image} />
+            {props.image}
           </span>
         )}
         {props.children}
@@ -24,7 +24,7 @@ const Page = props => (
 Page.propTypes = {
   children: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
-  image: PropTypes.string
+  image: PropTypes.object
 };
 
 export default Page;

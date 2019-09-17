@@ -28,12 +28,12 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link to="/generic" activeClassName="active">
+            <Link to="/pages/generic" activeClassName="active">
               Generic
             </Link>
           </li>
           <li>
-            <Link to="/elements" activeClassName="active">
+            <Link to="/pages/elements" activeClassName="active">
               Elements
             </Link>
           </li>

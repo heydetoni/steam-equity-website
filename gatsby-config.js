@@ -1,3 +1,5 @@
+const { join } = require("path");
+
 module.exports = {
   /** This path is subpath of your hosting https://domain.tld/subpath */
   pathPrefix: "/",
@@ -34,7 +36,26 @@ module.exports = {
     }
   },
   plugins: [
-    "gatsby-plugin-react-helmet",
+    // {
+    //   // This is the very first plugin on purpose
+    //   // If it isn't Gatsby will throw `ERROR #85909 GRAPHQL Field "image" must not have a selection since type "String" has no subfields`
+    //   // See Gatsby Remark relative images plugin FAQ https://www.gatsbyjs.org/packages/gatsby-remark-relative-images/#im-getting-the-error-field-image-must-not-have-a-selection-since-type-string-has-no-subfields
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     path: join(__dirname, "content", "images"),
+    //     name: "images"
+    //   }
+    // },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: join(__dirname, "content", "pages"),
+        name: "pages"
+      }
+    },
+    { resolve: "gatsby-transformer-sharp" },
+    { resolve: "gatsby-plugin-sharp" },
+    { resolve: "gatsby-plugin-react-helmet" },
     {
       resolve: "gatsby-plugin-manifest",
       /* eslint-disable camelcase */
@@ -46,16 +67,44 @@ module.exports = {
         theme_color: "#5E42A6",
         display: "standalone",
         // This path is relative to the root of the site.
-        icon: "src/assets/img/website-icon.png"
+        icon: "content/website-icon.png"
       }
     },
     { resolve: "gatsby-plugin-sass" },
+    // This goes after all the CSS stuff is finished
+    { resolve: "gatsby-plugin-purgecss", options: { printRejected: true } },
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        remarkPlugins: [
+          {
+            resolve: "gatsby-remark-relative-images",
+            options: {
+              name: "images"
+            }
+          },
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              // It's important to specify the maxWidth (in pixels) of the content container as this plugin uses this as the base for generating different widths of each image.
+              maxWidth: 1390
+            }
+          },
+          {
+            resolve: "gatsby-remark-copy-linked-files",
+            options: {
+              destinationDir: "static"
+            }
+          }
+        ]
+      }
+    },
     { resolve: "gatsby-plugin-sitemap" },
     { resolve: "gatsby-plugin-robots-txt" },
-    { resolve: "gatsby-plugin-purgecss", options: { printRejected: true } },
     {
       resolve: "gatsby-plugin-offline",
       options: { precachePages: ["/*"] }
-    }
+    },
+    { resolve: "gatsby-plugin-netlify-cms" }
   ]
 };

@@ -8,15 +8,15 @@ const Feature = props => (
     <span className="icon major">
       <FontAwesomeIcon icon={props.icon} />
     </span>
-    <h3>{props.title}</h3>
-    <p>{props.body}</p>
+    {props.title && <h3>{props.title}</h3>}
+    {props.body && <p>{props.body}</p>}
   </section>
 );
 
 Feature.propTypes = {
   title: PropTypes.string,
   body: PropTypes.string,
-  icon: PropTypes.string
+  icon: PropTypes.object.isRequired
 };
 
 export default Feature;
