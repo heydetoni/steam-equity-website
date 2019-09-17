@@ -60,7 +60,6 @@
   },
   "scripts": {
     "build": "rm -rf public; gatsby build",
-    "ci": "gatsby telemetry --disable",
     "develop": "gatsby develop",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
