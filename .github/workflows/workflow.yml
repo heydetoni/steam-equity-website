@@ -10,13 +10,15 @@ jobs:
       - name: "Git checkout"
         uses: actions/checkout@master
         with:
-          fetch-depth: 1
+          fetch-depth: 0
       - name: Set up Node.js
         uses: actions/setup-node@v1
         with:
           node-version: "10.x"
       - name: Install PNPM
         run: npm install -g pnpm
+      - name: Prepare Gatsby
+        run: npm run ci
       - name: Install
         run: pnpm install
       - name: Lint JavaScript
