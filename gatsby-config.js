@@ -36,20 +36,10 @@ module.exports = {
     }
   },
   plugins: [
-    // {
-    //   // This is the very first plugin on purpose
-    //   // If it isn't Gatsby will throw `ERROR #85909 GRAPHQL Field "image" must not have a selection since type "String" has no subfields`
-    //   // See Gatsby Remark relative images plugin FAQ https://www.gatsbyjs.org/packages/gatsby-remark-relative-images/#im-getting-the-error-field-image-must-not-have-a-selection-since-type-string-has-no-subfields
-    //   resolve: "gatsby-source-filesystem",
-    //   options: {
-    //     path: join(__dirname, "content", "images"),
-    //     name: "images"
-    //   }
-    // },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: join(__dirname, "content", "pages"),
+        path: join(__dirname, "content"),
         name: "pages"
       }
     },
