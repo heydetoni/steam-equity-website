@@ -9,36 +9,39 @@ const Header = () => {
           siteMetadata {
             title
           }
+          header {
+            externalLink
+            label
+            target
+          }
         }
       }
     `
   );
 
-  const { siteMetadata } = dataJson;
+  const { siteMetadata, header } = dataJson;
   return (
     <header id="header">
       <Link className="title" to="/">
         {siteMetadata.title}
       </Link>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/" activeClassName="active">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/pages/generic" activeClassName="active">
-              Generic
-            </Link>
-          </li>
-          <li>
-            <Link to="/pages/elements" activeClassName="active">
-              Elements
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      {Array.isArray(header) && header.length > 0 && (
+        <nav>
+          <ul>
+            {header.map(item => (
+              <li key={item.label}>
+                {item.externalLink ? (
+                  <a href={item.target}>{item.label}</a>
+                ) : (
+                  <Link to={item.target} activeClassName="active">
+                    {item.label}
+                  </Link>
+                )}
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
     </header>
   );
 };
