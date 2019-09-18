@@ -68,11 +68,11 @@ collections:
                     widget: "list"
                     required: false
                     fields:
-                      - name: "key"
-                        label: "Unique name"
-                        widget: "string"
                       - name: "value"
                         label: "Value"
+                        widget: "string"
+                      - name: "key"
+                        label: "Unique name"
                         widget: "string"
                   - name: "email"
                     label: "Email"
