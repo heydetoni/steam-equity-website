@@ -2,7 +2,7 @@ import { graphql, Link, useStaticQuery } from "gatsby";
 import React from "react";
 import "../assets/sass/main.scss";
 const Header = () => {
-  const { site } = useStaticQuery(
+  const { dataJson } = useStaticQuery(
     graphql`
       query {
         dataJson {
@@ -14,7 +14,7 @@ const Header = () => {
     `
   );
 
-  const { siteMetadata } = site;
+  const { siteMetadata } = dataJson;
   return (
     <header id="header">
       <Link className="title" to="/">
