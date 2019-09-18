@@ -61,14 +61,40 @@ collections:
                     required: false
               - name: "contact"
                 label: "Contact"
-                widget: "list"
+                widget: "object"
                 fields:
-                  - name: "key"
-                    label: "Unique name"
+                  - name: "address"
+                    label: "Address"
+                    widget: "list"
+                    required: false
+                    fields:
+                      - name: "key"
+                        label: "Unique name"
+                        widget: "string"
+                      - name: "value"
+                        label: "Value"
+                        widget: "string"
+                  - name: "email"
+                    label: "Email"
                     widget: "string"
-                  - name: "value"
-                    label: "Value"
+                    required: false
+                  - name: "phone"
+                    label: "Phone"
                     widget: "string"
+                    required: false
+                  - name: "socialMedia"
+                    label: "Social media links"
+                    widget: "object"
+                    required: false
+                    fields:
+                      - name: "gitHub"
+                        label: "GitHub"
+                        widget: "string"
+                        required: false
+                      - name: "instagram"
+                        label: "Instagram"
+                        widget: "string"
+                        required: false
               - label: "Global title"
                 name: "title"
                 widget: "string"
