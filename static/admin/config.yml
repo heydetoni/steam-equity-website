@@ -117,6 +117,9 @@ collections:
             label_singular: "Navbar item"
             widget: "list"
             fields:
+              - name: "label"
+                label: "Label"
+                widget: "string"
               - name: "externalLink"
                 label: "External link"
                 widget: "boolean"
