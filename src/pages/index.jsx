@@ -2,6 +2,7 @@ import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import React from "react";
+import Markdown from "react-markdown/with-html";
 import Feature from "../components/feature";
 import Scroll from "../components/Scroll";
 import Sidebar from "../components/sidebar";
@@ -80,7 +81,9 @@ const IndexPage = () => {
         <section id="two" className="wrapper style3 fade-up">
           <div className="inner">
             <h2>What we do</h2>
-            <p>{dataJson.features.body}</p>
+            <p>
+              <Markdown>{dataJson.features.body}</Markdown>
+            </p>
             <div className="features">
               {dataJson.features.features.map(feature => (
                 <Feature key={feature.icon} icon={feature.icon} title={feature.title}>
@@ -101,7 +104,9 @@ const IndexPage = () => {
         <section id="three" className="wrapper style1 fade-up">
           <div className="inner">
             <h2>Get in touch</h2>
-            <p>{dataJson.contact}</p>
+            <p>
+              <Markdown>{dataJson.contact}</Markdown>
+            </p>
             <div className="split style1">
               <section>
                 <form method="post" action="#">

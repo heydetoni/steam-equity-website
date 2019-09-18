@@ -38,6 +38,7 @@
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
     "react-lorem-ipsum": "^1.4.3",
+    "react-markdown": "^4.2.2",
     "react-scrollspy": "^3.4.0",
     "sass": "^1.22.12",
     "smoothscroll-polyfill": "^0.4.4"

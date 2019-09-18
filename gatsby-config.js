@@ -23,7 +23,7 @@ module.exports = {
       }
     },
     {
-      resolve: "gatsby-transformer-json"
+      resolve: "gatsby-json"
     },
     {
       resolve: "gatsby-source-filesystem",
