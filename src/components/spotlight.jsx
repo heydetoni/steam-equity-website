@@ -8,24 +8,26 @@ const Spotlight = props => (
     <Link className="image" to={props.to} style={{ backgroundImage: `url(${props.image})` }}></Link>
     <div className="content">
       <div className="inner">
-        <h2>{props.title}</h2>
-        <p>{props.message}</p>
-        <ul className="actions">
-          <li>
-            <Link className="button" to={props.to}>
-              Learn more
-            </Link>
-          </li>
-        </ul>
+        {props.title && <h2>{props.title}</h2>}
+        {props.message && <p>{props.message}</p>}
+        {props.to && (
+          <ul className="actions">
+            <li>
+              <Link className="button" to={props.to}>
+                Learn more
+              </Link>
+            </li>
+          </ul>
+        )}
       </div>
     </div>
   </section>
 );
 
 Spotlight.propTypes = {
-  to: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  message: PropTypes.string.isRequired,
+  to: PropTypes.string,
+  title: PropTypes.string,
+  message: PropTypes.string,
   image: PropTypes.string.isRequired
 };
 
