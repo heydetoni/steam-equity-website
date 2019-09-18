@@ -95,5 +95,25 @@
     },
     "description": "STEAM Equity Club at SJHS",
     "title": "STEAM Equity"
-  }
+  },
+  "spotlights": [
+    {
+      "body": "Block 1 body block 1 body block 1 body block 1 body",
+      "image": "pic1.jpg",
+      "title": "Block 1",
+      "to": "/pages/generic"
+    },
+    {
+      "body": "Block 2 body block 2 body block 2 body block 2 body",
+      "image": "pic2.jpg",
+      "title": "Block 2",
+      "to": "/pages/generic"
+    },
+    {
+      "body": "Block 3 body block 3 body block 3 body block 3 body",
+      "image": "pic3.jpg",
+      "title": "Block 3",
+      "to": "/pages/generic"
+    }
+  ]
 }

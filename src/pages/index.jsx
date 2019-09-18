@@ -1,6 +1,3 @@
-import pic1 from "$images/pic1.jpg";
-import pic2 from "$images/pic2.jpg";
-import pic3 from "$images/pic3.jpg";
 import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { graphql, Link, useStaticQuery } from "gatsby";
@@ -38,6 +35,12 @@ const IndexPage = () => {
             icon
             title
           }
+          spotlights {
+            body
+            image
+            title
+            to
+          }
         }
       }
     `
@@ -64,24 +67,14 @@ const IndexPage = () => {
         </section>
 
         <section id="one" className="wrapper style2 spotlights">
-          <Spotlight
-            title="Block 1"
-            message={loremIpsum({ avgSentencesPerParagraph: 4, startWithLoremIpsum: false })}
-            to="/pages/generic"
-            image={pic1}
-          />
-          <Spotlight
-            title="Block 2"
-            message={loremIpsum({ avgSentencesPerParagraph: 4, startWithLoremIpsum: false })}
-            to="/pages/generic"
-            image={pic2}
-          />
-          <Spotlight
-            title="Block 3"
-            message={loremIpsum({ avgSentencesPerParagraph: 4, startWithLoremIpsum: false })}
-            to="/pages/generic"
-            image={pic3}
-          />
+          {dataJson.spotlights.map(spotlight => (
+            <Spotlight
+              key={spotlight.title}
+              title={spotlight.title}
+              to={spotlight.to}
+              image={require(`$images/${spotlight.image}`)}
+            >{spotlight.body}</Spotlight>
+          ))}
         </section>
 
         <section id="two" className="wrapper style3 fade-up">

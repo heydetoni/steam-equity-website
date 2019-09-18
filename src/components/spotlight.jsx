@@ -9,7 +9,7 @@ const Spotlight = props => (
     <div className="content">
       <div className="inner">
         {props.title && <h2>{props.title}</h2>}
-        {props.message && <p>{props.message}</p>}
+        {props.children && <p>{props.children}</p>}
         {props.to && (
           <ul className="actions">
             <li>
@@ -27,8 +27,8 @@ const Spotlight = props => (
 Spotlight.propTypes = {
   to: PropTypes.string,
   title: PropTypes.string,
-  message: PropTypes.string,
-  image: PropTypes.string.isRequired
+  children: PropTypes.node,
+  image: PropTypes.node.isRequired
 };
 
 export default Spotlight;
