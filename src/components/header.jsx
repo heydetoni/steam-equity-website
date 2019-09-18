@@ -2,7 +2,7 @@ import { graphql, Link, useStaticQuery } from "gatsby";
 import React from "react";
 import "../assets/sass/main.scss";
 const Header = () => {
-  const { dataJson } = useStaticQuery(
+   const { dataJson } = useStaticQuery(
     graphql`
       query {
         dataJson {
