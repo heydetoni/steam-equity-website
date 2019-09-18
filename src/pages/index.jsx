@@ -14,10 +14,10 @@ import Spotlight from "../components/spotlight";
 import Layout from "../templates/layout";
 
 const IndexPage = () => {
-  const { site } = useStaticQuery(
+  const { dataJson } = useStaticQuery(
     graphql`
-      query {
-        site {
+      {
+        dataJson {
           siteMetadata {
             title
             description
@@ -38,7 +38,7 @@ const IndexPage = () => {
       }
     `
   );
-  const { siteMetadata } = site;
+  const { siteMetadata } = dataJson;
   return (
     <Layout>
       <Sidebar />

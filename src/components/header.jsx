@@ -5,7 +5,7 @@ const Header = () => {
   const { site } = useStaticQuery(
     graphql`
       query {
-        site {
+        dataJson {
           siteMetadata {
             title
           }

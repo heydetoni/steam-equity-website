@@ -21,6 +21,7 @@ dependencies:
   gatsby-remark-images: 3.1.22_0d02d06bc6d954534a7395c77dfc1e5a
   gatsby-remark-relative-images: 0.2.3
   gatsby-source-filesystem: 2.1.22_gatsby@2.15.16
+  gatsby-transformer-json: 2.2.8_gatsby@2.15.16
   gatsby-transformer-remark: 2.6.22_gatsby@2.15.16
   gatsby-transformer-sharp: 2.2.14_0d02d06bc6d954534a7395c77dfc1e5a
   netlify-cms-app: 2.9.7_react-dom@16.9.0+react@16.9.0
@@ -911,21 +912,21 @@ packages:
     dev: false
     resolution:
       integrity: sha512-/fnkM/LTEp3jKe++T0KyTszVGWNKPNOUJfjNKLO17BzQ6QPxgbg3whayom1Qr2oLFH3V92tDymU+dT5q676uow==
-  /@emotion/cache/10.0.17:
+  /@emotion/cache/10.0.19:
     dependencies:
       '@emotion/sheet': 0.9.3
       '@emotion/stylis': 0.8.4
       '@emotion/utils': 0.11.2
-      '@emotion/weak-memoize': 0.2.3
+      '@emotion/weak-memoize': 0.2.4
     dev: false
     resolution:
-      integrity: sha512-442/miwbuwIDfSzfMqZNxuzxSEbskcz/bZ86QBYzEjFrr/oq9w+y5kJY1BHbGhDtr91GO232PZ5NN9XYMwr/Qg==
+      integrity: sha512-BoiLlk4vEsGBg2dAqGSJu0vJl/PgVtCYLBFJaEO8RmQzPugXewQCXZJNXTDFaRlfCs0W+quesayav4fvaif5WQ==
   /@emotion/core/10.0.17_react@16.9.0:
     dependencies:
       '@babel/runtime': 7.6.0
-      '@emotion/cache': 10.0.17
+      '@emotion/cache': 10.0.19
       '@emotion/css': 10.0.14
-      '@emotion/serialize': 0.11.10
+      '@emotion/serialize': 0.11.11
       '@emotion/sheet': 0.9.3
       '@emotion/utils': 0.11.2
       react: 16.9.0
@@ -936,9 +937,9 @@ packages:
       integrity: sha512-gykyjjr0sxzVuZBVTVK4dUmYsorc2qLhdYgSiOVK+m7WXgcYTKZevGWZ7TLAgTZvMelCTvhNq8xnf8FR1IdTbg==
   /@emotion/css/10.0.14:
     dependencies:
-      '@emotion/serialize': 0.11.10
+      '@emotion/serialize': 0.11.11
       '@emotion/utils': 0.11.2
-      babel-plugin-emotion: 10.0.17
+      babel-plugin-emotion: 10.0.19
     dev: false
     resolution:
       integrity: sha512-MozgPkBEWvorcdpqHZE5x1D/PLEHUitALQCQYt2wayf4UNhpgQs2tN0UwHYS4FMy5ROBH+0ALyCFVYJ/ywmwlg==
@@ -946,34 +947,34 @@ packages:
     dev: false
     resolution:
       integrity: sha512-ojhgxzUHZ7am3D2jHkMzPpsBAiB005GF5YU4ea+8DNPybMk01JJUM9V9YRlF/GE95tcOm8DxQvWA2jq19bGalQ==
-  /@emotion/hash/0.7.2:
+  /@emotion/hash/0.7.3:
     dev: false
     resolution:
-      integrity: sha512-RMtr1i6E8MXaBWwhXL3yeOU8JXRnz8GNxHvaUfVvwxokvayUY0zoBeWbKw1S9XkufmGEEdQd228pSZXFkAln8Q==
-  /@emotion/is-prop-valid/0.8.2:
+      integrity: sha512-14ZVlsB9akwvydAdaEnVnvqu6J2P6ySv39hYyl/aoB6w/V+bXX0tay8cF6paqbgZsN2n5Xh15uF4pE+GvE+itw==
+  /@emotion/is-prop-valid/0.8.3:
     dependencies:
-      '@emotion/memoize': 0.7.2
+      '@emotion/memoize': 0.7.3
     dev: false
     resolution:
-      integrity: sha512-ZQIMAA2kLUWiUeMZNJDTeCwYRx1l8SQL0kHktze4COT22occKpDML1GDUXP5/sxhOMrZO8vZw773ni4H5Snrsg==
+      integrity: sha512-We7VBiltAJ70KQA0dWkdPMXnYoizlxOXpvtjmu5/MBnExd+u0PGgV27WCYanmLAbCwAU30Le/xA0CQs/F/Otig==
   /@emotion/memoize/0.6.6:
     dev: false
     resolution:
       integrity: sha512-h4t4jFjtm1YV7UirAFuSuFGyLa+NNxjdkq6DpFLANNQY5rHueFZHVY+8Cu1HYVP6DrheB0kv4m5xPjo7eKT7yQ==
-  /@emotion/memoize/0.7.2:
+  /@emotion/memoize/0.7.3:
     dev: false
     resolution:
-      integrity: sha512-hnHhwQzvPCW1QjBWFyBtsETdllOM92BfrKWbUTmh9aeOlcVOiXvlPsK4104xH8NsaKfg86PTFsWkueQeUfMA/w==
-  /@emotion/serialize/0.11.10:
+      integrity: sha512-2Md9mH6mvo+ygq1trTeVp2uzAKwE2P7In0cRpD/M9Q70aH8L+rxMLbb3JCN2JoSWsV2O+DdFjfbbXoMoLBczow==
+  /@emotion/serialize/0.11.11:
     dependencies:
-      '@emotion/hash': 0.7.2
-      '@emotion/memoize': 0.7.2
+      '@emotion/hash': 0.7.3
+      '@emotion/memoize': 0.7.3
       '@emotion/unitless': 0.7.4
       '@emotion/utils': 0.11.2
       csstype: 2.6.6
     dev: false
     resolution:
-      integrity: sha512-04AB+wU00vv9jLgkWn13c/GJg2yXp3w7ZR3Q1O6mBSE6mbUmYeNX3OpBhfp//6r47lFyY0hBJJue+bA30iokHQ==
+      integrity: sha512-YG8wdCqoWtuoMxhHZCTA+egL0RSGdHEc+YCsmiSBPBEDNuVeMWtjEWtGrhUterSChxzwnWBXvzSxIFQI/3sHLw==
   /@emotion/serialize/0.9.1:
     dependencies:
       '@emotion/hash': 0.6.6
@@ -987,12 +988,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-c3Q6V7Df7jfwSq5AzQWbXHa5soeE4F5cbqi40xn0CzXxWW9/6Mxq48WJEtqfWzbZtW9odZdnRAkwCQwN12ob4A==
-  /@emotion/styled-base/10.0.17_75d44323d27ae6c4096518a4415c4206:
+  /@emotion/styled-base/10.0.19_75d44323d27ae6c4096518a4415c4206:
     dependencies:
       '@babel/runtime': 7.6.0
       '@emotion/core': 10.0.17_react@16.9.0
-      '@emotion/is-prop-valid': 0.8.2
-      '@emotion/serialize': 0.11.10
+      '@emotion/is-prop-valid': 0.8.3
+      '@emotion/serialize': 0.11.11
       '@emotion/utils': 0.11.2
       react: 16.9.0
     dev: false
@@ -1000,12 +1001,12 @@ packages:
       '@emotion/core': ^10.0.17
       react: '>=16.3.0'
     resolution:
-      integrity: sha512-vqQvxluZZKPByAB4zYZys0Qo/kVDP/03hAeg1K+TYpnZRwTi7WteOodc+/5669RPVNcfb93fphQpM5BYJnI1/g==
+      integrity: sha512-Sz6GBHTbOZoeZQKvkE9gQPzaJ6/qtoQ/OPvyG2Z/6NILlYk60Es1cEcTgTkm26H8y7A0GSgp4UmXl+srvsnFPg==
   /@emotion/styled/10.0.17_75d44323d27ae6c4096518a4415c4206:
     dependencies:
       '@emotion/core': 10.0.17_react@16.9.0
-      '@emotion/styled-base': 10.0.17_75d44323d27ae6c4096518a4415c4206
-      babel-plugin-emotion: 10.0.17
+      '@emotion/styled-base': 10.0.19_75d44323d27ae6c4096518a4415c4206
+      babel-plugin-emotion: 10.0.19
       react: 16.9.0
     dev: false
     peerDependencies:
@@ -1037,10 +1038,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-rLu3wcBWH4P5q1CGoSSH/i9hrXs7SlbRLkoq9IGuoPYNGQvDJ3pt/wmOM+XgYjIDRMVIdkUWt0RsfzF50JfnCw==
-  /@emotion/weak-memoize/0.2.3:
+  /@emotion/weak-memoize/0.2.4:
     dev: false
     resolution:
-      integrity: sha512-zVgvPwGK7c1aVdUVc9Qv7SqepOGRDrqCw7KZPSZziWGxSlbII3gmvGLPzLX4d0n0BMbamBacUrN22zOMyFFEkQ==
+      integrity: sha512-6PYY5DVdAY1ifaQW6XYTnOMihmBVT27elqSjEoodchsGjzYlEsTQMcEhSud99kVawatyTZRTiVkJ/c6lwbQ7nA==
   /@fortawesome/fontawesome-common-types/0.2.22:
     dev: false
     engines:
@@ -2385,12 +2386,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-o6qFkpeQEBxcqt0XYlWzAVxNCSCZdUgcR8IRlhD/8DylxjjO4foPcvTW0GGKa/cVt3rvxZ7o5ippJ+/0nvLhlQ==
-  /babel-plugin-emotion/10.0.17:
+  /babel-plugin-emotion/10.0.19:
     dependencies:
       '@babel/helper-module-imports': 7.0.0
-      '@emotion/hash': 0.7.2
-      '@emotion/memoize': 0.7.2
-      '@emotion/serialize': 0.11.10
+      '@emotion/hash': 0.7.3
+      '@emotion/memoize': 0.7.3
+      '@emotion/serialize': 0.11.11
       babel-plugin-macros: 2.6.1
       babel-plugin-syntax-jsx: 6.18.0
       convert-source-map: 1.6.0
@@ -2399,7 +2400,7 @@ packages:
       source-map: 0.5.7
     dev: false
     resolution:
-      integrity: sha512-KNuBadotqYWpQexHhHOu7M9EV1j2c+Oh/JJqBfEQDusD6mnORsCZKHkl+xYwK82CPQ/23wRrsBIEYnKjtbMQJw==
+      integrity: sha512-1pJb5uKN/gx6bi3gGr588Krj49sxARI9KmxhtMUa+NRJb6lR3OfC51mh3NlWRsOqdjWlT4cSjnZpnFq5K3T5ZA==
   /babel-plugin-emotion/9.2.11:
     dependencies:
       '@babel/helper-module-imports': 7.0.0
@@ -4274,6 +4275,14 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-gKTdMjdIOEv6JICDYirt7Jgq3/M=
+  /decompress-response/4.2.1:
+    dependencies:
+      mimic-response: 2.0.0
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-jOSne2qbyE+/r8G1VU+G/82LBs2Fs4LAsTiLSHOCOMZQl2OKZ6i8i4IyHemTe+/yIXOtTcRQMzPcgyhoFlqPkw==
   /decompress-tar/4.1.1:
     dependencies:
       file-type: 5.2.0
@@ -4904,7 +4913,7 @@ packages:
       integrity: sha512-7dFHNmqeFSEt2ZBsCriorKnn3Z2pj+fd9kmI6QoWw4//DL+icEBfc0U7qJCisqrTsKTjw4fNFy2pW9OqStD84g==
   /error-stack-parser/2.0.3:
     dependencies:
-      stackframe: 1.0.4
+      stackframe: 1.1.0
     dev: false
     resolution:
       integrity: sha512-vRC4rKv87twMZy92X4+TmUdv3iYMsmePbpG/YguHsfzmZ8bYJZYYep7yrXH09yFUaCEPKgNK5X79+Yq7hwLVOA==
@@ -6075,7 +6084,7 @@ packages:
       integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
   /fs-minipass/1.2.7:
     dependencies:
-      minipass: 2.6.2
+      minipass: 2.6.5
     dev: false
     resolution:
       integrity: sha512-GWSSJGFy4e9GUeCcbIkED+bgAoFyj7XF1mV8rma3QW4NIqX9Kyx79N/PF61H5udOV3aY1IaMLs6pGbH71nlCTA==
@@ -6548,6 +6557,18 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-tG1NS1BBIKHUXutGKYvoGFmR3sIC+l9GHd52ko2RNxm+rcnKMQAsrhlCfnKw2yGB+wys/k9YOJ5bZ1da1TFe7A==
+  /gatsby-transformer-json/2.2.8_gatsby@2.15.16:
+    dependencies:
+      '@babel/runtime': 7.6.0
+      bluebird: 3.5.5
+      gatsby: 2.15.16_354e9e70aa73732ce64c4f3801c3cafd
+    dev: false
+    engines:
+      node: '>=8.0.0'
+    peerDependencies:
+      gatsby: ^2.0.15
+    resolution:
+      integrity: sha512-duZymKGtJ2FV1J+a3pT8q+1+NkZKZq7RawLWpPrE7+d2VaAHH7pzuwXb4If93uqk7rITE1K7s5++sv/hBzGFCw==
   /gatsby-transformer-remark/2.6.22_gatsby@2.15.16:
     dependencies:
       '@babel/runtime': 7.6.0
@@ -9694,6 +9715,12 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-j5EctnkH7amfV/q5Hgmoal1g2QHFJRraOtmx0JpIqkxhBhI/lJSl1nMpQ45hVarwNETOoWEimndZ4QK0RHxuxQ==
+  /mimic-response/2.0.0:
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-8ilDoEapqA4uQ3TwS0jakGONKXVJqpy+RpM+3b7pLdOjghCrEiGp9SRkFbUHAmZW9vdnrENWHjaweIoTIJExSQ==
   /min-document/2.19.0:
     dependencies:
       dom-walk: 0.1.1
@@ -9753,16 +9780,16 @@ packages:
     dev: false
     resolution:
       integrity: sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=
-  /minipass/2.6.2:
+  /minipass/2.6.5:
     dependencies:
       safe-buffer: 5.2.0
       yallist: 3.0.3
     dev: false
     resolution:
-      integrity: sha512-38Jwdc8AttUDaQAIRX8Iaw3QoCDWjAwKMGeGDF9JUi9QCPMjH5qAQg/hdO8o1nC7Nmh1/CqzMg5FQPEKuKwznQ==
+      integrity: sha512-ewSKOPFH9blOLXx0YSE+mbrNMBFPS+11a2b03QZ+P4LVrUHW/GAlqeYC7DBknDyMWkHzrzTpDhUvy7MUxqyrPA==
   /minizlib/1.2.2:
     dependencies:
-      minipass: 2.6.2
+      minipass: 2.6.5
     dev: false
     resolution:
       integrity: sha512-hR3At21uSrsjjDTWrbu0IMLTpnkpv8IIMFDFaoz43Tmu4LkmAXfH44vNNzpTnf+OAQQCHrb91y/wc2J4x5XgSQ==
@@ -11985,7 +12012,7 @@ packages:
       npmlog: 4.1.2
       pump: 3.0.0
       rc: 1.2.8
-      simple-get: 3.0.3
+      simple-get: 3.1.0
       tar-fs: 2.0.0
       tunnel-agent: 0.6.0
       which-pm-runs: 1.0.0
@@ -13864,8 +13891,8 @@ packages:
       npmlog: 4.1.2
       prebuild-install: 5.3.2
       semver: 6.3.0
-      simple-get: 3.0.3
-      tar: 4.4.10
+      simple-get: 3.1.0
+      tar: 4.4.11
       tunnel-agent: 0.6.0
     dev: false
     engines:
@@ -13909,14 +13936,14 @@ packages:
     dev: false
     resolution:
       integrity: sha1-c0TLuLbib7J9ZrL8hvn21Zl1IcY=
-  /simple-get/3.0.3:
+  /simple-get/3.1.0:
     dependencies:
-      decompress-response: 3.3.0
+      decompress-response: 4.2.1
       once: 1.4.0
       simple-concat: 1.0.0
     dev: false
     resolution:
-      integrity: sha512-Wvre/Jq5vgoz31Z9stYWPLn0PqRqmBDpFSdypAnHu5AvRVCYPRYGnvryNLiXu8GOBNDH82J2FRHUGMjjHUpXFw==
+      integrity: sha512-bCR6cP+aTdScaQCnQKbPKtJOKDp/hj9EDLJo3Nw4y1QksqaovlW/bnptB6/c1e+qmNIDHRK+oXFDdEqBT8WzUA==
   /simple-swizzle/0.2.2:
     dependencies:
       is-arrayish: 0.3.2
@@ -14411,10 +14438,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-MTX+MeG5U994cazkjd/9KNAapsHnibjMLnfXodlkXw76JEea0UiNzrqidzo1emMwk7w5Qhc9jd4Bn9TBb1MFwA==
-  /stackframe/1.0.4:
+  /stackframe/1.1.0:
     dev: false
     resolution:
-      integrity: sha512-to7oADIniaYwS3MhtCa/sQhrxidCCQiF/qp4/m5iN3ipf0Y7Xlri0f6eG29r08aL7JYl8n32AF3Q5GYBZ7K8vw==
+      integrity: sha512-Vx6W1Yvy+AM1R/ckVwcHQHV147pTPBKWCRLrXMuPrFVfvBUc3os7PR1QLIWCMhPpRg5eX9ojzbQIMLGBwyLjqg==
   /state-toggle/1.0.2:
     dev: false
     resolution:
@@ -14843,11 +14870,11 @@ packages:
     dev: false
     resolution:
       integrity: sha512-+DAn4Nb4+gz6WZigRzKEZl1QuJVOLtAwwF+WUxy1fJ6X63CaGaUAxJRD2KEn1OMfcbCjySTYpNC6WmfQoIEOdw==
-  /tar/4.4.10:
+  /tar/4.4.11:
     dependencies:
       chownr: 1.1.2
       fs-minipass: 1.2.7
-      minipass: 2.6.2
+      minipass: 2.6.5
       minizlib: 1.2.2
       mkdirp: 0.5.1
       safe-buffer: 5.2.0
@@ -14856,7 +14883,7 @@ packages:
     engines:
       node: '>=4.5'
     resolution:
-      integrity: sha512-g2SVs5QIxvo6OLp0GudTqEf05maawKUxXru104iaayWA09551tFCTI8f1Asb4lPfkBr91k07iL4c11XO3/b0tA==
+      integrity: sha512-iI4zh3ktLJKaDNZKZc+fUONiQrSn9HkCFzamtb7k8FFmVilHVob7QsLX/VySAW8lAviMzMbFw4QtFb4errwgYA==
   /teeny-tap/0.2.0:
     dev: false
     resolution:
@@ -16394,6 +16421,7 @@ specifiers:
   gatsby-remark-images: ^3.1.22
   gatsby-remark-relative-images: ^0.2.3
   gatsby-source-filesystem: ^2.1.22
+  gatsby-transformer-json: ^2.2.8
   gatsby-transformer-remark: ^2.6.22
   gatsby-transformer-sharp: ^2.2.14
   netlify-cms-app: ^2.9.7

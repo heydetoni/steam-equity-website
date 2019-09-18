@@ -10,16 +10,20 @@ import React from "react";
 import Helmet from "react-helmet";
 
 const SEO = () => {
-  const { site } = useStaticQuery(
+  const { site, dataJson } = useStaticQuery(
     graphql`
       query {
-        site {
+        dataJson {
           siteMetadata {
             title
             description
             author {
               twitter
             }
+          }
+        }
+        site {
+          siteMetadata {
             siteUrl
           }
         }
@@ -27,36 +31,34 @@ const SEO = () => {
     `
   );
 
-  const siteInfo = site.siteMetadata;
-
   const seoTags = [
     {
       property: "og:site_name",
-      content: siteInfo.title
+      content: dataJson.siteMetadata.title
     },
     {
       property: "og:title",
-      content: siteInfo.title
+      content: dataJson.siteMetadata.title
     },
     {
       name: "twitter:title",
-      content: siteInfo.title
+      content: dataJson.siteMetadata.title
     },
     {
       property: "og:url",
-      content: siteInfo.siteUrl
+      content: site.siteMetadata.siteUrl
     },
     {
       name: "description",
-      content: siteInfo.description
+      content: dataJson.siteMetadata.description
     },
     {
       name: "twitter:description",
-      content: siteInfo.description
+      content: dataJson.siteMetadata.description
     },
     {
       property: "og:description",
-      content: siteInfo.description
+      content: dataJson.siteMetadata.description
     },
     {
       property: "og:type",
@@ -68,10 +70,10 @@ const SEO = () => {
     }
   ];
 
-  if (siteInfo.author.twitter) {
+  if (dataJson.siteMetadata.author.twitter) {
     seoTags.push({
       name: "twitter:creator",
-      content: siteInfo.author.twitter
+      content: dataJson.siteMetadata.author.twitter
     });
   }
 
@@ -80,8 +82,8 @@ const SEO = () => {
       htmlAttributes={{
         lang: "en"
       }}
-      title={siteInfo.title}
-      titleTemplate={`%s | ${siteInfo.title}`}
+      title={dataJson.siteMetadata.title}
+      titleTemplate={`%s | ${dataJson.siteMetadata.title}`}
       meta={seoTags}
     />
   );

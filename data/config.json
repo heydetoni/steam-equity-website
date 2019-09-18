@@ -1,0 +1,50 @@
+{
+  "sidebar": [
+    {
+      "content": "Welcome",
+      "href": "intro"
+    },
+    {
+      "content": "Who we are",
+      "href": "one"
+    },
+    {
+      "content": "What we do",
+      "href": "two"
+    },
+    {
+      "content": "Get in touch",
+      "href": "three"
+    }
+  ],
+  "siteMetadata": {
+    "author": {
+      "name": "STEAM Equity Club",
+      "twitter": ""
+    },
+    "contact": {
+      "address": [
+        {
+          "key": "streetAddress",
+          "value": "275 N 24th St"
+        },
+        {
+          "key": "city",
+          "value": "San Jose"
+        },
+        {
+          "key": "stateAndZip",
+          "value": "CA 95116"
+        }
+      ],
+      "email": "example@example.com",
+      "phone": "(000) 000-0000",
+      "socialMedia": {
+        "gitHub": "https://github.com/pizzafox/steam-equity-website",
+        "instagram": "https://instagram.com/sjhssteamequityy"
+      }
+    },
+    "description": "STEAM Equity Club at SJHS",
+    "title": "STEAM Equity"
+  }
+}
