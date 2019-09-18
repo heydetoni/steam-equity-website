@@ -67,5 +67,5 @@
     "prettier:fix": "prettier --check --write \"./**/*.{{j,t}{s,sx},flow,{[s]c,le}ss,json,m{d,dx},{y,ya}ml}\"",
     "serve": "gatsby serve"
   },
-  "version": "2.3.2"
+  "version": "2.3.3"
 }
