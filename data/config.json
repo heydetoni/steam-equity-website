@@ -1,71 +1,4 @@
 {
-  "features": [
-    {
-      "body": "Feature feature feature feature",
-      "icon": "fas fa-code",
-      "title": "Feature #1"
-    },
-    {
-      "body": "Feature feature feature feature",
-      "icon": "fas fa-lock",
-      "title": "Feature #2"
-    },
-    {
-      "body": "Feature feature feature feature",
-      "icon": "fas fa-cog",
-      "title": "Feature #3"
-    },
-    {
-      "body": "Feature feature feature feature",
-      "icon": "fas fa-desktop",
-      "title": "Feature #4"
-    },
-    {
-      "body": "Feature feature feature feature",
-      "icon": "fas fa-link",
-      "title": "Feature #5"
-    },
-    {
-      "body": "Feature feature feature feature",
-      "icon": "fas fa-gem",
-      "title": "Feature #6"
-    }
-  ],
-  "header": [
-    {
-      "externalLink": false,
-      "label": "Home",
-      "target": "/"
-    },
-    {
-      "externalLink": false,
-      "label": "Generic",
-      "target": "/pages/generic"
-    },
-    {
-      "externalLink": false,
-      "label": "Elements",
-      "target": "/pages/elements"
-    }
-  ],
-  "sidebar": [
-    {
-      "content": "Welcome",
-      "href": "intro"
-    },
-    {
-      "content": "Who we are",
-      "href": "one"
-    },
-    {
-      "content": "What we do",
-      "href": "two"
-    },
-    {
-      "content": "Get in touch",
-      "href": "three"
-    }
-  ],
   "siteMetadata": {
     "author": {
       "name": "STEAM Equity Club",
@@ -93,27 +26,94 @@
         "instagram": "https://instagram.com/sjhssteamequityy"
       }
     },
-    "description": "STEAM Equity Club at SJHS",
-    "title": "STEAM Equity"
+    "title": "STEAM Equity",
+    "description": "STEAM Equity Club at SJHS"
   },
+  "sidebar": [
+    {
+      "content": "Welcome",
+      "href": "intro"
+    },
+    {
+      "content": "Who we are",
+      "href": "one"
+    },
+    {
+      "content": "What we do",
+      "href": "two"
+    },
+    {
+      "content": "Get in touch",
+      "href": "three"
+    }
+  ],
+  "header": [
+    {
+      "label": "Home",
+      "externalLink": false,
+      "target": "/"
+    },
+    {
+      "label": "Generic",
+      "externalLink": false,
+      "target": "/pages/generic"
+    },
+    {
+      "label": "Elements",
+      "externalLink": false,
+      "target": "/pages/elements"
+    }
+  ],
+  "features": [
+    {
+      "title": "Feature #1",
+      "icon": "fas fa-code",
+      "body": "Feature feature feature feature"
+    },
+    {
+      "title": "Feature #2",
+      "icon": "fas fa-lock",
+      "body": "Feature feature feature feature"
+    },
+    {
+      "title": "Feature #3",
+      "icon": "fas fa-cog",
+      "body": "Feature feature feature feature"
+    },
+    {
+      "title": "Feature #4",
+      "icon": "fas fa-desktop",
+      "body": "Feature feature feature feature"
+    },
+    {
+      "title": "Feature #5",
+      "icon": "fas fa-link",
+      "body": "Feature feature feature feature"
+    },
+    {
+      "title": "Feature #6",
+      "icon": "fas fa-gem",
+      "body": "Feature feature feature feature"
+    }
+  ],
   "spotlights": [
     {
-      "body": "Block 1 body block 1 body block 1 body block 1 body",
-      "image": "pic1.jpg",
       "title": "Block 1",
-      "to": "/pages/generic"
+      "body": "Block 1 body block 1 body block 1 body block 1 body",
+      "to": "/pages/generic",
+      "image": "pic1.jpg"
     },
     {
-      "body": "Block 2 body block 2 body block 2 body block 2 body",
-      "image": "pic2.jpg",
       "title": "Block 2",
-      "to": "/pages/generic"
+      "body": "Block 2 body block 2 body block 2 body block 2 body",
+      "to": "/pages/generic",
+      "image": "pic2.jpg"
     },
     {
-      "body": "Block 3 body block 3 body block 3 body block 3 body",
-      "image": "pic3.jpg",
       "title": "Block 3",
-      "to": "/pages/generic"
+      "body": "Block 3 body block 3 body block 3 body block 3 body",
+      "to": "/pages/generic",
+      "image": "/content/pic3.jpg"
     }
   ]
 }
