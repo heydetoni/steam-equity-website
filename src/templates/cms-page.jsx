@@ -6,7 +6,10 @@ import Page from "./page";
 
 export default function CMSPageTemplate({ data: { mdx } }) {
   return (
-    <Page title={mdx.frontmatter.title} image={<Img key="image" fluid={mdx.frontmatter.image.childImageSharp.fluid} />}>
+    <Page
+      title={mdx.frontmatter.title}
+      image={mdx.frontmatter.image && <Img key="image" fluid={mdx.frontmatter.image.childImageSharp.fluid} />}
+    >
       <MDXRenderer>{mdx.body}</MDXRenderer>
     </Page>
   );
