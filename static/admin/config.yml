@@ -1,0 +1,49 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: content
+public_folder: content
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    label_singular: "Page"
+    description: "Custom pages other than the main page"
+    summary: "{{title}} -- {{year}}/{{month}}/{{day}}"
+    folder: "content"
+    create: true
+    slug: "{{slug}}"
+    # Netlify CMS doesn't support MDX files right now, so we tell it to treat them as Markdown
+    extension: mdx
+    format: frontmatter
+    editor:
+      preview: false
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Header image"
+        name: "image"
+        widget: "image"
+        required: false
+        # Used to disable preview
+        tagname: ""
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+  - name: "settings"
+    label: "Settings"
+    # Prevent users from deleting documents in this collection
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "Site Settings"
+        file: "../config.json"
+        description: "General site settings"
+        fields:
+          - label: "Global title"
+            name: "site_title"
+            widget: "string"
