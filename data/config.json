@@ -7,16 +7,16 @@
     "contact": {
       "address": [
         {
-          "key": "streetAddress",
-          "value": "275 N 24th St"
+          "value": "275 N 24th St",
+          "key": "streetAddress"
         },
         {
-          "key": "city",
-          "value": "San Jose"
+          "value": "San Jose",
+          "key": "city"
         },
         {
-          "key": "stateAndZip",
-          "value": "CA 95116"
+          "value": "CA 95116",
+          "key": "stateAndZip"
         }
       ],
       "email": "example@example.com",
@@ -65,7 +65,7 @@
     }
   ],
   "features": {
-    "body": "Here are the features for the club\n\n# big heading",
+    "body": "Here are the features for the club",
     "features": [
       {
         "title": "Feature #1",
@@ -119,5 +119,5 @@
       "image": "/images/pic3.jpg"
     }
   ],
-  "contact": "Contact the club using this form.\n\n# big heading test"
+  "contact": "Contact the club using this form."
 }
