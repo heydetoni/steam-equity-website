@@ -2,7 +2,6 @@ import pic1 from "$images/pic1.jpg";
 import pic2 from "$images/pic2.jpg";
 import pic3 from "$images/pic3.jpg";
 import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faCode, faCog, faDesktop, faGem, faLink, faLock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import React from "react";
@@ -33,6 +32,11 @@ const IndexPage = () => {
                 value
               }
             }
+          }
+          features {
+            body
+            icon
+            title
           }
         }
       }
@@ -85,17 +89,10 @@ const IndexPage = () => {
             <h2>What we do</h2>
             <p>{loremIpsum({ avgSentencesPerParagraph: 5, startWithLoremIpsum: false })}</p>
             <div className="features">
-              {[faCode, faLock, faCog, faDesktop, faLink, faGem].map(icon => (
-                <Feature
-                  key={`${icon.prefix}-${icon.iconName}`}
-                  icon={icon}
-                  title={loremIpsum({
-                    avgWordsPerSentence: 3,
-                    avgSentencesPerParagraph: 1,
-                    startWithLoremIpsum: false
-                  })}
-                  body={loremIpsum({ avgSentencesPerParagraph: 2, startWithLoremIpsum: false })}
-                />
+              {dataJson.features.map(feature => (
+                <Feature key={feature.icon} icon={feature.icon} title={feature.title}>
+                  {feature.body}
+                </Feature>
               ))}
             </div>
             <ul className="actions">

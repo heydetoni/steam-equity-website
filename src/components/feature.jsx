@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
 import React from "react";
 import "../assets/sass/main.scss";
@@ -6,17 +5,17 @@ import "../assets/sass/main.scss";
 const Feature = props => (
   <section>
     <span className="icon major">
-      <FontAwesomeIcon icon={props.icon} />
+      <i className={props.icon} />
     </span>
     {props.title && <h3>{props.title}</h3>}
-    {props.body && <p>{props.body}</p>}
+    {props.children && <p>{props.children}</p>}
   </section>
 );
 
 Feature.propTypes = {
   title: PropTypes.string,
-  body: PropTypes.string,
-  icon: PropTypes.object.isRequired
+  children: PropTypes.string,
+  icon: PropTypes.string.isRequired
 };
 
 export default Feature;

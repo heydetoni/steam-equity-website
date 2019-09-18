@@ -1,4 +1,36 @@
 {
+  "features": [
+    {
+      "body": "Feature feature feature feature",
+      "icon": "fas fa-code",
+      "title": "Feature #1"
+    },
+    {
+      "body": "Feature feature feature feature",
+      "icon": "fas fa-lock",
+      "title": "Feature #2"
+    },
+    {
+      "body": "Feature feature feature feature",
+      "icon": "fas fa-cog",
+      "title": "Feature #3"
+    },
+    {
+      "body": "Feature feature feature feature",
+      "icon": "fas fa-desktop",
+      "title": "Feature #4"
+    },
+    {
+      "body": "Feature feature feature feature",
+      "icon": "fas fa-link",
+      "title": "Feature #5"
+    },
+    {
+      "body": "Feature feature feature feature",
+      "icon": "fas fa-gem",
+      "title": "Feature #6"
+    }
+  ],
   "header": [
     {
       "externalLink": false,
