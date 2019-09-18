@@ -41,7 +41,7 @@ collections:
     files:
       - name: "general"
         label: "Site Settings"
-        file: ../data/config.json
+        file: data/config.json
         description: "General site settings"
         fields:
           - name: "siteMetadata"
