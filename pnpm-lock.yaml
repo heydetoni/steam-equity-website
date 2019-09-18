@@ -11,7 +11,6 @@ dependencies:
   gatsby-plugin-mdx: 1.0.42_e6a3b4064fc4ef2afbd4bdf07ee279ca
   gatsby-plugin-netlify-cms: 4.1.16_870799caa7eb332506df3af00c1ddefa
   gatsby-plugin-offline: 3.0.7_gatsby@2.15.16
-  gatsby-plugin-purgecss: 4.0.1_gatsby@2.15.16
   gatsby-plugin-react-helmet: 3.1.7_f4e187b9fcdb1d6af778e433c0fa7133
   gatsby-plugin-robots-txt: 1.5.0_gatsby@2.15.16
   gatsby-plugin-sass: 2.1.14_gatsby@2.15.16
@@ -1539,7 +1538,7 @@ packages:
   /@pieh/friendly-errors-webpack-plugin/1.7.0-chalk-2_webpack@4.40.2:
     dependencies:
       chalk: 2.4.2
-      error-stack-parser: 2.0.3
+      error-stack-parser: 2.0.4
       string-width: 2.1.1
       strip-ansi: 3.0.1
       webpack: 4.40.2_webpack@4.40.2
@@ -2885,7 +2884,7 @@ packages:
   /browserslist/3.2.8:
     dependencies:
       caniuse-lite: 1.0.30000989
-      electron-to-chromium: 1.3.260
+      electron-to-chromium: 1.3.261
     dev: false
     hasBin: true
     resolution:
@@ -2893,7 +2892,7 @@ packages:
   /browserslist/4.7.0:
     dependencies:
       caniuse-lite: 1.0.30000989
-      electron-to-chromium: 1.3.260
+      electron-to-chromium: 1.3.261
       node-releases: 1.1.32
     dev: false
     hasBin: true
@@ -3464,14 +3463,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-4FG+RSG9DL7uEwRUZXZn3SS34DiDPfzP0VOiEwtUWlE+AR2EIg+hSyvrIgUUfhdgR/UkAeW2QHgeP+hWrXs7jQ==
-  /cliui/5.0.0:
-    dependencies:
-      string-width: 3.1.0
-      strip-ansi: 5.2.0
-      wrap-ansi: 5.1.0
-    dev: false
-    resolution:
-      integrity: sha512-PYeGSEmmHM6zvoef2w8TPzlrnNpXIjTipYK780YswmIP9vjxmd6Y2a3CB2Ks6/AU8NHjZugXvo8w3oWM2qnwXA==
   /clone-deep/4.0.1:
     dependencies:
       is-plain-object: 2.0.4
@@ -4079,13 +4070,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-MsCAG1z9lPdoO/IUMLSBWBSVxVtJ1395VGIQ+Fc2gNdkQ1hNDnQdw3YhA71WJCBW1vdwA0cAnk/DnW6bqoEUYg==
-  /cssesc/3.0.0:
-    dev: false
-    engines:
-      node: '>=4'
-    hasBin: true
-    resolution:
-      integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==
   /cssnano-preset-default/4.0.7:
     dependencies:
       css-declaration-sorter: 4.0.1
@@ -4778,10 +4762,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
-  /electron-to-chromium/1.3.260:
+  /electron-to-chromium/1.3.261:
     dev: false
     resolution:
-      integrity: sha512-wGt+OivF1C1MPwaSv3LJ96ebNbLAWlx3HndivDDWqwIVSQxmhL17Y/YmwUdEMtS/bPyommELt47Dct0/VZNQBQ==
+      integrity: sha512-nA9xFj1SgHXlW/6T4+udW2u/Ic/bne25UoFsddoNM7Ut2bgNGLLQUhLhk+vQlbKh9WiRgDDlHaC36Oy7AgRR9w==
   /elliptic/6.5.1:
     dependencies:
       bn.js: 4.11.8
@@ -4911,12 +4895,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-7dFHNmqeFSEt2ZBsCriorKnn3Z2pj+fd9kmI6QoWw4//DL+icEBfc0U7qJCisqrTsKTjw4fNFy2pW9OqStD84g==
-  /error-stack-parser/2.0.3:
+  /error-stack-parser/2.0.4:
     dependencies:
       stackframe: 1.1.0
     dev: false
     resolution:
-      integrity: sha512-vRC4rKv87twMZy92X4+TmUdv3iYMsmePbpG/YguHsfzmZ8bYJZYYep7yrXH09yFUaCEPKgNK5X79+Yq7hwLVOA==
+      integrity: sha512-fZ0KkoxSjLFmhW5lHbUT3tLwy3nX1qEzMYo8koY1vrsAco53CMT1djnBSeC/wUjTEZRhZl9iRw7PaMaxfJ4wzQ==
   /es-abstract/1.14.2:
     dependencies:
       es-to-primitive: 1.2.0
@@ -5373,6 +5357,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-tvtQIeLVHjDkJYnzf2dgVMxfuSGJeM/7UCG17TT4EumTfNtF+0nebF/4zWOIkCreAbtNqhGEboB6BWrwqNaw4Q==
+  /eventemitter3/4.0.0:
+    dev: false
+    resolution:
+      integrity: sha512-qerSRB0p+UDEssxTtm6EDKcE7W4OaoisfIMl4CngyEhjpYglocpNg6UEqCvemdGhosAsg4sO2dXJOdyBifPGCg==
   /events/3.0.0:
     dev: false
     engines:
@@ -6346,17 +6334,6 @@ packages:
       gatsby: ^2.0.0
     resolution:
       integrity: sha512-0PxLwZH1INOjQ9QhoL+1lS5/Fad72izmuusiEWktP1njw0CBzNQW9XK+KdT2TrSzlnt9U4NyJzW+VDAbtVBXpg==
-  /gatsby-plugin-purgecss/4.0.1_gatsby@2.15.16:
-    dependencies:
-      fs-extra: 8.1.0
-      gatsby: 2.15.16_354e9e70aa73732ce64c4f3801c3cafd
-      loader-utils: 1.2.3
-      purgecss: 1.4.0
-    dev: false
-    peerDependencies:
-      gatsby: '>2.0.0-beta'
-    resolution:
-      integrity: sha512-sYh7gm+9dovl+QASrInSXqB2qIMdfGW+Y7+Gum//jYjvktYlFCjGUXD8k/Wiw+CmXaJh8k5avFC23Cot96SS4w==
   /gatsby-plugin-react-helmet/3.1.7_f4e187b9fcdb1d6af778e433c0fa7133:
     dependencies:
       '@babel/runtime': 7.6.0
@@ -6796,12 +6773,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-3t6rVToeoZfYSGd8YoLFR2DJkiQrIiUrGcjvFX2mDw3bn6k2OtwHN0TNCLbBO+w8qTvimhDkv+LSscbJY1vE6w==
-  /get-caller-file/2.0.5:
-    dev: false
-    engines:
-      node: 6.* || 8.* || >= 10.*
-    resolution:
-      integrity: sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
   /get-document/1.0.0:
     dev: false
     resolution:
@@ -7711,7 +7682,7 @@ packages:
       integrity: sha1-ksnBN0w1CF912zWexWzCV8u5P6Q=
   /http-proxy-middleware/0.19.1:
     dependencies:
-      http-proxy: 1.17.0
+      http-proxy: 1.18.0
       is-glob: 4.0.1
       lodash: 4.17.15
       micromatch: 3.1.10
@@ -7720,16 +7691,16 @@ packages:
       node: '>=4.0.0'
     resolution:
       integrity: sha512-yHYTgWMQO8VvwNS22eLLloAkvungsKdKTLO8AJlftYIKNfJr3GK3zK0ZCfzDDGUBttdGc8xFy1mCitvNKQtC3Q==
-  /http-proxy/1.17.0:
+  /http-proxy/1.18.0:
     dependencies:
-      eventemitter3: 3.1.2
+      eventemitter3: 4.0.0
       follow-redirects: 1.9.0
       requires-port: 1.0.0
     dev: false
     engines:
-      node: '>=4.0.0'
+      node: '>=6.0.0'
     resolution:
-      integrity: sha512-Taqn+3nNvYRfJ3bGvKfBSRwy1v6eePlm3oc/aWVxZp57DQr5Eq3xhKJi7Z4hZpS8PC3H4qI+Yly5EmFacGuA/g==
+      integrity: sha512-84I2iJM/n1d4Hdgc6y2+qY5mDaz2PUVjlg9znE9byl+q0uC3DeByqBGReQu5tpLK0TAqTIXScRUV+dg7+bUPpQ==
   /http-signature/1.2.0:
     dependencies:
       assert-plus: 1.0.0
@@ -11934,16 +11905,6 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-w+zLE5Jhg6Liz8+rQOWEAwtwkyqpfnmsinXjXg6cY7YIONZZtgvE0v2O0uhQBs0peNomOJwWRKt6JBfTdTd3OQ==
-  /postcss-selector-parser/6.0.2:
-    dependencies:
-      cssesc: 3.0.0
-      indexes-of: 1.0.1
-      uniq: 1.0.1
-    dev: false
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha512-36P2QR59jDTOAiIkqEprfJDsoNrvwFei3eCqKd1Y0tUsBimsq39BLp7RD+JWny3WgB1zGhJX8XVePwm9k4wdBg==
   /postcss-svgo/4.0.2:
     dependencies:
       is-svg: 3.0.0
@@ -12232,19 +12193,6 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
-  /purgecss/1.4.0:
-    dependencies:
-      glob: 7.1.4
-      postcss: 7.0.18
-      postcss-selector-parser: 6.0.2
-      yargs: 14.0.0
-    dev: false
-    engines:
-      node: '>=4.4.0'
-      npm: '>=5.2.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-or7/16i7O6DH+NpXqY8NCcWCc940O6PxOgjWAcMTElzgccKOJua1/n6JVtM8UYqoMMWoCyKk+CbLpo4+4mY3BQ==
   /q/1.5.1:
     dev: false
     engines:
@@ -13429,10 +13377,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-l/cXtp1IeE9fUmpsWqj/3aBVpNE=
-  /require-main-filename/2.0.0:
-    dev: false
-    resolution:
-      integrity: sha512-NKN5kMDylKuldxYLSUfrbo5Tuzh4hd+2E8NPPX02mZtn1VuREQToYe/ZdlJy+J3uCpfaiGF05e7B8W0iXbQHmg==
   /requires-port/1.0.0:
     dev: false
     resolution:
@@ -16144,6 +16088,7 @@ packages:
     dev: false
     engines:
       node: '>=6'
+    optional: true
     resolution:
       integrity: sha512-QC1/iN/2/RPVJ5jYK8BGttj5z83LmSKmvbvrXPNCLZSEb32KKVDJDl/MOt2N01qU2H/FkzEa9PKto1BqDjtd7Q==
   /wrappy/1.0.2:
@@ -16281,13 +16226,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-C6kB/WJDiaxONLJQnF8ccx9SEeoTTLek8RVbaOIsrAUS8VrBEXfmeSnCZxygc+XC2sNMBIwOOnfcxiynjHsVSQ==
-  /yargs-parser/13.1.1:
-    dependencies:
-      camelcase: 5.3.1
-      decamelize: 1.2.0
-    dev: false
-    resolution:
-      integrity: sha512-oVAVsHz6uFrg3XQheFII8ESO2ssAf9luWuAd6Wexsu4F3OtIW0o8IribPXYrD4WC24LWtPrJlGy87y5udK+dxQ==
   /yargs-parser/7.0.0:
     dependencies:
       camelcase: 4.1.0
@@ -16311,22 +16249,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Lhz8TLaYnxq/2ObqHDql8dX8CJi97oHxrjUcYtzKbbykPtVW9WB+poxI+NM2UIzsMgNCZTIf0AQwsjK5yMAqZw==
-  /yargs/14.0.0:
-    dependencies:
-      cliui: 5.0.0
-      decamelize: 1.2.0
-      find-up: 3.0.0
-      get-caller-file: 2.0.5
-      require-directory: 2.1.1
-      require-main-filename: 2.0.0
-      set-blocking: 2.0.0
-      string-width: 3.1.0
-      which-module: 2.0.0
-      y18n: 4.0.0
-      yargs-parser: 13.1.1
-    dev: false
-    resolution:
-      integrity: sha512-ssa5JuRjMeZEUjg7bEL99AwpitxU/zWGAGpdj0di41pOEmJti8NR6kyUIJBkR78DTYNPZOU08luUo0GTHuB+ow==
   /yargs/9.0.1:
     dependencies:
       camelcase: 4.1.0
@@ -16411,7 +16333,6 @@ specifiers:
   gatsby-plugin-mdx: ^1.0.41
   gatsby-plugin-netlify-cms: ^4.1.15
   gatsby-plugin-offline: ^3.0.6
-  gatsby-plugin-purgecss: ^4.0.1
   gatsby-plugin-react-helmet: ^3.1.7
   gatsby-plugin-robots-txt: ^1.5.0
   gatsby-plugin-sass: ^2.1.14

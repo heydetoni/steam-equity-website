@@ -36,8 +36,7 @@ module.exports = {
     { resolve: "gatsby-plugin-sharp" },
     { resolve: "gatsby-plugin-react-helmet" },
     { resolve: "gatsby-plugin-sass" },
-    // This goes after all the CSS stuff is finished
-    { resolve: "gatsby-plugin-purgecss", options: { printRejected: true } },
+
     {
       resolve: "gatsby-plugin-mdx",
       options: {
