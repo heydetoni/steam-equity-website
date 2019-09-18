@@ -78,7 +78,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         // When we import something starting with `$components` it will be redirected to the componenets folder in the source folder
         $components: path.resolve(__dirname, "src/components"),
         // When we import something starting with `$images` it will be redirected to the content folder
-        $images: path.resolve(__dirname, "content"),
+        $images: path.resolve(__dirname, "static", "images"),
         // We do the same for the content variable (since the images folder might get moved eventually)
         $content: path.resolve(__dirname, "content")
       }

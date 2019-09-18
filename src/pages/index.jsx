@@ -68,12 +68,9 @@ const IndexPage = () => {
 
         <section id="one" className="wrapper style2 spotlights">
           {dataJson.spotlights.map(spotlight => (
-            <Spotlight
-              key={spotlight.title}
-              title={spotlight.title}
-              to={spotlight.to}
-              image={require(`$images/${spotlight.image}`)}
-            >{spotlight.body}</Spotlight>
+            <Spotlight key={spotlight.title} title={spotlight.title} to={spotlight.to} image={spotlight.image}>
+              {spotlight.body}
+            </Spotlight>
           ))}
         </section>
 

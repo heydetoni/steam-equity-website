@@ -11,6 +11,13 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        path: join(__dirname, "static", "images"),
+        name: "images"
+      }
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         path: join(__dirname, "content"),
         name: "pages"
       }
@@ -70,7 +77,7 @@ module.exports = {
         theme_color: "#5E42A6",
         display: "standalone",
         // This path is relative to the root of the site.
-        icon: "content/website-icon.png"
+        icon: "static/images/website-icon.png"
       }
     },
     {

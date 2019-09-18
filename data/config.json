@@ -101,19 +101,19 @@
       "title": "Block 1",
       "body": "Block 1 body block 1 body block 1 body block 1 body",
       "to": "/pages/generic",
-      "image": "pic1.jpg"
+      "image": "/images/pic1.jpg"
     },
     {
       "title": "Block 2",
       "body": "Block 2 body block 2 body block 2 body block 2 body",
       "to": "/pages/generic",
-      "image": "pic2.jpg"
+      "image": "/images/pic2.jpg"
     },
     {
       "title": "Block 3",
       "body": "Block 3 body block 3 body block 3 body block 3 body",
       "to": "/pages/generic",
-      "image": "/content/pic3.jpg"
+      "image": "/images/pic3.jpg"
     }
   ]
 }

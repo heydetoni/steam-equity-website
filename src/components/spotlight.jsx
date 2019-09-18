@@ -5,7 +5,13 @@ import "../assets/sass/main.scss";
 
 const Spotlight = props => (
   <section>
-    <Link className="image" to={props.to} style={{ backgroundImage: `url(${props.image})` }}></Link>
+    <Link
+      className="image"
+      to={props.to}
+      // Netlify CMS has the public image folder set to `/static/images`, but when publish it becomes `/images`
+      // The replace function here removes the `/static` part so the image won't 404 error
+      style={{ backgroundImage: `url(${props.image.replace("/static", "")})` }}
+    ></Link>
     <div className="content">
       <div className="inner">
         {props.title && <h2>{props.title}</h2>}
