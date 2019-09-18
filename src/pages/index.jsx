@@ -2,7 +2,6 @@ import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import React from "react";
-import { loremIpsum } from "react-lorem-ipsum";
 import Feature from "../components/feature";
 import Scroll from "../components/Scroll";
 import Sidebar from "../components/sidebar";
@@ -32,8 +31,11 @@ const IndexPage = () => {
           }
           features {
             body
-            icon
-            title
+            features {
+              body
+              icon
+              title
+            }
           }
           spotlights {
             body
@@ -41,6 +43,7 @@ const IndexPage = () => {
             title
             to
           }
+          contact
         }
       }
     `
@@ -77,9 +80,9 @@ const IndexPage = () => {
         <section id="two" className="wrapper style3 fade-up">
           <div className="inner">
             <h2>What we do</h2>
-            <p>{loremIpsum({ avgSentencesPerParagraph: 5, startWithLoremIpsum: false })}</p>
+            <p>{dataJson.features.body}</p>
             <div className="features">
-              {dataJson.features.map(feature => (
+              {dataJson.features.features.map(feature => (
                 <Feature key={feature.icon} icon={feature.icon} title={feature.title}>
                   {feature.body}
                 </Feature>
@@ -98,7 +101,7 @@ const IndexPage = () => {
         <section id="three" className="wrapper style1 fade-up">
           <div className="inner">
             <h2>Get in touch</h2>
-            <p>{loremIpsum({ avgSentencesPerParagraph: 3, startWithLoremIpsum: false })}</p>
+            <p>{dataJson.contact}</p>
             <div className="split style1">
               <section>
                 <form method="post" action="#">
