@@ -15,17 +15,17 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "10.x"
-      - name: Install PNPM
-        run: npm install -g pnpm
+      - name: Install Yarn
+        run: curl -o- -L https://yarnpkg.com/install.sh | bash
       - name: Install
-        run: pnpm install --shamefully-flatten
+        run: yarn install
         env:
           GATSBY_TELEMETRY_DISABLED: 1
       - name: Lint JavaScript
-        run: pnpm run lint
+        run: yarn run lint
       - name: Check formatting
-        run: pnpm run prettier
+        run: yarn run prettier
       - name: Build for production
-        run: pnpm run build
+        run: yarn run build
         env:
           GATSBY_TELEMETRY_DISABLED: 1
