@@ -4,7 +4,7 @@ import "../assets/sass/main.scss";
 import Wrapper from "./wrapper";
 
 const Page = props => (
-  <Wrapper>
+  <Wrapper title={props.title}>
     <section key="section" id="main" className="wrapper">
       <div key="inner" className="inner">
         <h1 key="title" className="major">

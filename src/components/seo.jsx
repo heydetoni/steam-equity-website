@@ -6,10 +6,11 @@
  */
 
 import { graphql, useStaticQuery } from "gatsby";
+import PropTypes from "prop-types";
 import React from "react";
 import Helmet from "react-helmet";
 
-const SEO = () => {
+const SEO = (props) => {
   const { site, dataJson } = useStaticQuery(
     graphql`
       query {
@@ -38,7 +39,7 @@ const SEO = () => {
     },
     {
       property: "og:title",
-      content: dataJson.siteMetadata.title
+      content: props.title || dataJson.siteMetadata.title
     },
     {
       name: "twitter:title",
@@ -82,11 +83,15 @@ const SEO = () => {
       htmlAttributes={{
         lang: "en"
       }}
-      title={dataJson.siteMetadata.title}
+      title={props.title || dataJson.siteMetadata.title}
       titleTemplate={`%s | ${dataJson.siteMetadata.title}`}
       meta={seoTags}
     />
   );
 };
+
+SEO.propTypes ={
+  title: PropTypes.string
+}
 
 export default SEO;

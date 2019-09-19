@@ -4,16 +4,17 @@ import "../assets/sass/main.scss";
 import Footer from "../components/footer";
 import SEO from "../components/seo";
 
-const Layout = ({ children }) => (
+const Layout = ({ children, title }) => (
   <React.Fragment>
-    <SEO />
+    <SEO title={title} />
     {children}
     <Footer />
   </React.Fragment>
 );
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired
 };
 
 export default Layout;

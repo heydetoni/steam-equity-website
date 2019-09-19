@@ -51,7 +51,7 @@ const IndexPage = () => {
   );
   const { siteMetadata } = dataJson;
   return (
-    <Layout>
+    <Layout title="Home">
       <Sidebar />
       <div id="wrapper">
         <section id="intro" className="wrapper style1 fullscreen fade-up">
