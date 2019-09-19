@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import Helmet from "react-helmet";
 
-const SEO = (props) => {
+const SEO = props => {
   const { site, dataJson } = useStaticQuery(
     graphql`
       query {
@@ -90,8 +90,8 @@ const SEO = (props) => {
   );
 };
 
-SEO.propTypes ={
+SEO.propTypes = {
   title: PropTypes.string
-}
+};
 
 export default SEO;

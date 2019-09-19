@@ -4,7 +4,7 @@ import "../assets/sass/main.scss";
 import Header from "../components/header";
 import Layout from "./layout";
 
-const Page = ({ children,title }) => (
+const Page = ({ children, title }) => (
   <Layout title={title}>
     <Header />
     <div id="wrapper">{children}</div>
