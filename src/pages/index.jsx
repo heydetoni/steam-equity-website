@@ -81,9 +81,9 @@ const IndexPage = () => {
         <section id="two" className="wrapper style3 fade-up">
           <div className="inner">
             <h2>What we do</h2>
-            <p>
+            <div>
               <Markdown>{dataJson.features.body}</Markdown>
-            </p>
+            </div>
             <div className="features">
               {dataJson.features.features.map(feature => (
                 <Feature key={feature.icon} icon={feature.icon} title={feature.title}>
@@ -104,9 +104,9 @@ const IndexPage = () => {
         <section id="three" className="wrapper style1 fade-up">
           <div className="inner">
             <h2>Get in touch</h2>
-            <p>
+            <div>
               <Markdown>{dataJson.contact}</Markdown>
-            </p>
+            </div>
             <div className="split style1">
               <section>
                 <form method="post" action="#">
