@@ -1,2 +1,0 @@
-# Redirect default Netlify subdomain to primary domain
-https://steam-equity.netlify.com/* https://steam.zws.im/:splat 301!

@@ -12,3 +12,8 @@
 
   # Default build command.
   command = "npm run build"
+
+[[redirects]]
+  from = "https://steam-equity.netlify.com/*"
+  to = "https://steam.zws.im/:splat"
+  status = 301
