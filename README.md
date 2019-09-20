@@ -16,8 +16,8 @@ The site is made using Gatsby, SCSS, HTML, and React.
 
 ### Installing dependencies
 
-This project uses PNPM to manage dependencies.
-However, Yarn and NPM will also work, they just won't read the lockfile.
+This project uses Yarn to manage dependencies.
+However, PNPM and NPM will also work, they just won't read the lockfile.
 
 ```sh
 # NPM
