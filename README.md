@@ -48,6 +48,12 @@ When you make a change, please update the `version` key in the `package.json` fi
 We use ESLint to lint JavaScript files and Prettier for everything.
 Additionally, we have an EditorConfig file which your IDE may use to automatically format files on save.
 
+Before you commit your changes, run this command to format them:
+
+```sh
+npm run prettier:fix; npm run lint:fix
+```
+
 #### ESLint
 
 Use this command to show errors in JavaScript code:
