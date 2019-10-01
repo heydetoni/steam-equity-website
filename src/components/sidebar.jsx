@@ -1,9 +1,9 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
+import Scroll from "react-anchor-link-smooth-scroll";
 import Scrollspy from "react-scrollspy";
-import Scroll from "./Scroll";
 
-export default () => {
+const Sidebar = () => {
   const { dataJson } = useStaticQuery(
     graphql`
       query {
@@ -28,9 +28,7 @@ export default () => {
               const { href, content } = tab;
               return (
                 <li key={href}>
-                  <Scroll type="id" element={href}>
-                    <a href={`#${href}`}>{content}</a>
-                  </Scroll>
+                  <Scroll href={`#${href}`}>{content}</Scroll>
                 </li>
               );
             })}
@@ -40,3 +38,5 @@ export default () => {
     </section>
   );
 };
+
+export default Sidebar;

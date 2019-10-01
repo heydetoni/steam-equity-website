@@ -2,9 +2,9 @@ import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import React from "react";
+import Scroll from "react-anchor-link-smooth-scroll";
 import Markdown from "react-markdown/with-html";
 import Feature from "../components/feature";
-import Scroll from "../components/Scroll";
 import Sidebar from "../components/sidebar";
 import Spotlight from "../components/spotlight";
 import Layout from "../templates/layout";
@@ -60,10 +60,8 @@ const IndexPage = () => {
             <p>{siteMetadata.description}</p>
             <ul className="actions">
               <li>
-                <Scroll type="id" element="one">
-                  <a href="#one" className="button">
-                    Learn more
-                  </a>
+                <Scroll href="#one" className="button">
+                  Learn more
                 </Scroll>
               </li>
             </ul>
