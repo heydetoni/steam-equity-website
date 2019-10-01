@@ -53,7 +53,7 @@
     "eslint-plugin-react": "^7.14.3",
     "prettier": "^1.18.2"
   },
-  "homepage": "https://steamequity.netlify.com",
+  "homepage": "https://steam-equity.netlify.com",
   "license": "Apache-2.0",
   "name": "steam-equity-website",
   "repository": {
