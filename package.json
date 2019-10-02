@@ -41,7 +41,7 @@
     "react-lorem-ipsum": "^1.4.3",
     "react-markdown": "^4.2.2",
     "react-scrollspy": "^3.4.0",
-    "sass": "^1.22.12",
+    "sass": "^1.23.0",
     "smoothscroll-polyfill": "^0.4.4"
   },
   "description": "STEAM Equity Gatsby website using Hyperspace by HTML5 UP",
