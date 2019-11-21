@@ -48,7 +48,7 @@
   "devDependencies": {
     "@dice-discord/eslint-config": "^3.0.0",
     "eslint": "^6.6.0",
-    "eslint-config-prettier": "^6.6.0",
+    "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
     "prettier": "^1.18.2"
