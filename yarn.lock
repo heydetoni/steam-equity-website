@@ -12298,10 +12298,10 @@ react-scroll-sync@^0.6.0:
   resolved "https://registry.yarnpkg.com/react-scroll-sync/-/react-scroll-sync-0.6.0.tgz#c87eba2cdd55ae35874277d74b034419d73df59a"
   integrity sha512-Frc7pNPIEQY6rUAUwm1wW0an57Xau6X1Sag+Ra2FJT+oDBEBdh4cahrE3oGwtYHPcyWMt74q7vRKLw73cPy6aw==
 
-react-scrollspy@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/react-scrollspy/-/react-scrollspy-3.4.0.tgz#5cf2e5b3e5de2d268a9456dfbbebed77aa6358a2"
-  integrity sha512-l7XDF6ZWuP0X+pLw+i5V8akWph/IQZ6/fnPXPN2R/xsgbXzXLtC/3URNcxj/hKIRjQpdYMrJR2VKqMkw2nnTvQ==
+react-scrollspy@^3.4.2:
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/react-scrollspy/-/react-scrollspy-3.4.2.tgz#0303e9a5d2fc4ee833b6729962bbb3b32375454c"
+  integrity sha512-mFev6IBPPGdn0WsAiS0eCoHGUUet0ZRZUHHUw3qLcsvsQZPlubik0N9cf8CcgIbdVzNd04K9L9A0inHhPt7drw==
   dependencies:
     babel-runtime "^6.26.0"
     classnames "^2.2.5"
