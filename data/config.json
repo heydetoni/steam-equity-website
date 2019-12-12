@@ -19,8 +19,8 @@
           "key": "stateAndZip"
         }
       ],
-      "email": "example@example.com",
-      "phone": "(000) 000-0000",
+      "email": "kkotha24@gmail.com",
+      "phone": "669-234-9909",
       "socialMedia": {
         "gitHub": "https://github.com/pizzafox/steam-equity-website",
         "instagram": "https://instagram.com/sjhssteamequityy"
@@ -31,20 +31,24 @@
   },
   "sidebar": [
     {
-      "content": "Welcome",
+      "content": "Science ",
       "href": "intro"
     },
     {
-      "content": "Who we are",
+      "content": "Technology ",
       "href": "one"
     },
     {
-      "content": "What we do",
+      "content": "Engineering",
       "href": "two"
     },
     {
-      "content": "Get in touch",
+      "content": "Art",
       "href": "three"
+    },
+    {
+      "content": "Mathematics ",
+      "href": "four "
     }
   ],
   "header": [
