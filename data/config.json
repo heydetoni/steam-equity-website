@@ -101,9 +101,9 @@
   },
   "spotlights": [
     {
-      "title": "Block 1",
-      "body": "Block 1 body block 1 body block 1 body block 1 body",
-      "to": "/pages/generic",
+      "title": "Article: Efficient software development using continuous integration",
+      "body": "This article is about how the SJHS Robotics club's uses continuous integration to help work together as a group and make changes seamlessly.",
+      "to": "/pages/efficient-software-development-using-continuous-integration",
       "image": "/images/pic1.jpg"
     },
     {
