@@ -1,0 +1,10 @@
+---
+title: Efficient software development using continuous integration
+---
+In the last few years, the SJHS robotics club has grown exponentially in size. We went from eighteen members in the 2017-2018 season to 60 members now. With this growth in members, the club needs to grow itself to adapt to this change. The programming sub-team (which is a division of the club responsible for developing the software) has undergone dramatic changes in the last two years in response.
+
+Starting in the 2017-2018 season we began using GitHub, which is a website that allows us to store our code online. You can think of it as Google Drive for code. Storing all of our code online has a lot of benefits, mainly it allows many programmers to make contributions from their own computers to one central place.
+
+But, when you have a lot of programmers making changes to your code, it's pretty easy to introduce bugs in your code. To help mitigate this, we implemented automated testing that will run each time a programmer makes a change. This sort of testing that is triggered each time someone makes a change is called continuous integration, or CI.
+
+Continuous integration can be used for a variety of purposes, but most commonly it's used for automating repetitive tasks, like testing your program or uploading your app to the app store. Our CI setup is pretty simple. We use a tool called [Prettier](https://prettier.io) to check our code formatting and make sure it's following our team's code style. Making sure your code is nice to look at can be helpful, but it won't catch any errors. Our other more important task is to compile our code, which effectively makes sure that we didn't make any basic errors. Of course, compiling our code will only catch really stupid errors we make, not anything where we accidentally program a behavior we don't want (ex. driving backward when we wanted it to drive forward).
