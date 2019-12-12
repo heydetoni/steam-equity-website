@@ -52,16 +52,6 @@
       "label": "Home",
       "externalLink": false,
       "target": "/"
-    },
-    {
-      "label": "Generic",
-      "externalLink": false,
-      "target": "/pages/generic"
-    },
-    {
-      "label": "Elements",
-      "externalLink": false,
-      "target": "/pages/elements"
     }
   ],
   "features": {
