@@ -31,24 +31,20 @@
   },
   "sidebar": [
     {
-      "content": "Science ",
+      "content": "STEAM Equity ",
       "href": "intro"
     },
     {
-      "content": "Technology ",
+      "content": "Blocks ",
       "href": "one"
     },
     {
-      "content": "Engineering",
+      "content": "What we Do ",
       "href": "two"
     },
     {
-      "content": "Art",
+      "content": "Contact Us ",
       "href": "three"
-    },
-    {
-      "content": "Mathematics ",
-      "href": "four "
     }
   ],
   "header": [
