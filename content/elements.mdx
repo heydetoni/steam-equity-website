@@ -33,8 +33,8 @@ import pic6 from "$images/pic6.jpg";
   <h3>Preformatted</h3>
   <pre>
     <code>
-      i = 0; while (!deck.isInOrder()) print &quot;Iteration &quot; + i; deck.shuffle(); i++; print &quot;It took &quot;
-      + i + &quot; iterations to sort the deck.&quot;;
+      i = 0; while (!deck.isInOrder()) print "Iteration " + i; deck.shuffle(); i++; print "It took ";
+      + i + " iterations to sort the deck.";
     </code>
   </pre>
 </section>
@@ -196,7 +196,7 @@ import pic6 from "$images/pic6.jpg";
     </table>
   </div>
 
-<h3>Alternate</h3>
+  <h3>Alternate</h3>
 
   <div className="table-wrapper">
     <table className="alt">
@@ -379,55 +379,15 @@ import pic6 from "$images/pic6.jpg";
   <div className="box alt">
     <div className="row gtr-uniform">
       <div className="col-12">
-        <span className="image fit">
+        <span key="image-col-12" className="image fit">
           <img src={pic4} />
         </span>
       </div>
-      <div className="col-4">
+    {[pic1, pic2, pic3, pic3, pic1, pic2, pic2, pic3, pic1].map((pic, index) => <div key={`pic-${index}`} className="col-4">
         <span className="image fit">
-          <img src={pic1} />
+          <img src={pic} />
         </span>
-      </div>
-      <div className="col-4">
-        <span className="image fit">
-          <img src={pic2} />
-        </span>
-      </div>
-      <div className="col-4">
-        <span className="image fit">
-          <img src={pic3} />
-        </span>
-      </div>
-      <div className="col-4">
-        <span className="image fit">
-          <img src={pic3} />
-        </span>
-      </div>
-      <div className="col-4">
-        <span className="image fit">
-          <img src={pic1} />
-        </span>
-      </div>
-      <div className="col-4">
-        <span className="image fit">
-          <img src={pic2} />
-        </span>
-      </div>
-      <div className="col-4">
-        <span className="image fit">
-          <img src={pic2} />
-        </span>
-      </div>
-      <div className="col-4">
-        <span className="image fit">
-          <img src={pic3} />
-        </span>
-      </div>
-      <div className="col-4">
-        <span className="image fit">
-          <img src={pic1} />
-        </span>
-      </div>
+      </div>)}
     </div>
   </div>
   <h3>Left &amp; Right</h3>

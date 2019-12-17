@@ -23,7 +23,7 @@ export const pageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxHeight: 200, maxWidth: 600) {
+            fluid(maxHeight: 400, maxWidth: 1200) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
